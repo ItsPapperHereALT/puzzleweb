@@ -29,21 +29,9 @@
 <input type="text" id="answer5" placeholder="Your answer shall go here.">
 <button onclick="checkAnswer5()">Submit</button>
 
-<script>
-function checkAnswer5() {
-  const userAnswer = document.getElementById('answer5').value.trim().toLowerCase();
-  if (userAnswer === "ephemeral") {
-    window.location.hash = "huh";
-  } else {
-    alert("Wrong one. Try again.");
-  }
-}
-</script>
     <script>console.log`Xgktpr​`
     </script>
-    </div>
-
-  </div>
+</div>
 
     <div id="huh" class="level">
       <h1>...</h1>
@@ -51,17 +39,6 @@ function checkAnswer5() {
 <h6>MzEzNTIwMzMyMDM4MjAzNTIwMzMyMDMxMzEyMDMxMjAzMTMzMjAzNTIwMzEzMjIwMzkyMDM1MjAzMTM5MjAzNTIwMzEzODIwMzIzMjIwMzUyMDMxMzgyMDMxMzYyMDMxMzgyMDMxMzUyMDM2MjAzOTIwMzEzMjIwMzU=</h6>
 <input type="text" id="answer10" placeholder="Input what you got from it here.">
 <button onclick="checkAnswer10()">Submit</button>
-
-<script>
-function checkAnswer10() {
-  const userAnswer = document.getElementById('answer10').value.trim().toLowerCase();
-  if (userAnswer === "ocheckamelieserverprofile") {
-    window.location.hash = "amelie";
-  } else {
-    alert("Wrong one. Try again.");
-  }
-}
-</script>
   </div>
 
 
@@ -72,17 +49,6 @@ function checkAnswer10() {
 
 <input type="text" id="answer2" placeholder="Your answer shall go here.">
 <button onclick="checkAnswer2()">Submit</button>
-
-<script>
-function checkAnswer2() {
-  const userAnswer = document.getElementById('answer2').value.trim().toLowerCase();
-  if (userAnswer === "i am disappearing") {
-    window.location.hash = "theend";
-  } else {
-    alert("Wrong one. Try again.");
-  }
-}
-</script>
   </div>
 
   <div id="theend" class="level">
@@ -92,17 +58,6 @@ function checkAnswer2() {
     <h4>Let's see if you know.</h4>
     <input type="text" id="answer6" placeholder="Your answer shall go here.">
 <button onclick="checkAnswer6()">Submit</button>
-
-<script>
-function checkAnswer6() {
-  const userAnswer = document.getElementById('answer6').value.trim().toLowerCase();
-  if (userAnswer === "beaufort") {
-    window.location.hash = "thetruetheend";
-  } else {
-    alert("Wrong one. Try again.");
-  }
-}
-</script>
 <br>
 <br>
 <br>
@@ -132,17 +87,6 @@ function checkAnswer6() {
 <h6>Every key you've uncovered thus far has its place here. Top to bottom. But it will be missing something that you don't know.</h6>
 <input type="text" id="answer7" placeholder="...">
 <button onclick="checkAnswer7()">Submit</button>
-
-<script>
-function checkAnswer7() {
-  const userAnswer = document.getElementById('answer7').value.trim().toLowerCase();
-  if (userAnswer === "your evanescent flower dear amelie") {
-    window.location.hash = "xk9Qm2vLpZ7wR4tN";
-  } else {
-    alert("Wrong one. Try again.");
-  }
-}
-</script>
   </div>
 
     <div id="xk9Qm2vLpZ7wR4tN" class="level">
@@ -150,18 +94,52 @@ function checkAnswer7() {
     <hr style="border: 0; border-top: 5px solid #ffffff; margin: 12px 0;">
     <h3>You've won this one very simple puzzle that me and Yuki took only 2 days to made! Now that you've won, let's see if you can get a prize from Yuki!</h3>
     <script>
-      console.log`https://tiohmaxzing.dev, if you sees this, send this to Yuki to confirm that you've made it this far!`
+      console.log`tiohmaxzing.dev, visit me.`
     </script>
+</div>
+
 <footer>Made by Thomas :3</footer>
 
 <script>
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function checkAnswer(inputId, correctHash, nextHash) {
+  const userAnswer = document.getElementById(inputId).value.trim().toLowerCase();
+  const hash = await sha256(userAnswer);
+  if (hash === correctHash) {
+    window.location.hash = nextHash;
+  } else {
+    alert("Wrong one. Try again.");
+  }
+}
+
+function checkAnswer5() {
+  checkAnswer('answer5', '8341425cafede9d24b0599aefdfdeff1c1526ed75b07217eb99bf8c0b7498b8', 'huh');
+}
+function checkAnswer10() {
+  checkAnswer('answer10', 'a57c6c277b3adb4d95abf9908e5f4d7dc7e87be6c28096d09827aef976e0b1c', 'amelie');
+}
+function checkAnswer2() {
+  checkAnswer('answer2', 'a3899b6478b398a7ac335bb178fc3118b12a2a527bc646337e05ee1201e6101', 'theend');
+}
+function checkAnswer6() {
+  checkAnswer('answer6', '5d862c762ae0b54a86bb3a41ac8b7a2640cdc6d2a50494d117741952037fff2', 'thetruetheend');
+}
+function checkAnswer7() {
+  checkAnswer('answer7', '81627e268672fe11b19062fb947ef890987ca10113f7d1d46b1e907f94e40da', 'xk9Qm2vLpZ7wR4tN');
+}
+
 function showLevel() {
   document.querySelectorAll('.level').forEach(el => el.style.display = 'none');
   const hash = location.hash || '#level1';
   const target = document.querySelector(hash);
   if (target) target.style.display = 'block';
 
-    if (hash === '#level2') {
+  if (hash === '#level2') {
     console.log("Hi, this is the console log and it will be your best friend on this journey. Anyway, to go to the next level, simply remove #level2 in the link and add #simplicity");
   }
 
