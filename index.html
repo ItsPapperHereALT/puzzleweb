@@ -107,9 +107,9 @@ async function sha256(str) {
   return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
-async function checkAnswer(inputId, correctHash, nextHash) {
+async function checkAnswer(inputId, correctHash, nextHash, salt) {
   const userAnswer = document.getElementById(inputId).value.trim().toLowerCase();
-  const hash = await sha256(userAnswer);
+  const hash = await sha256(salt + userAnswer);
   if (hash === correctHash) {
     window.location.hash = nextHash;
   } else {
