@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Puzzle</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
   <style>
@@ -12,152 +12,77 @@
       color: #ffffff;
       font-family: 'Roboto', sans-serif;
     }
-    .level { display: none; }
   </style>
 </head>
 <body>
 
-<div id="level1" class="level">
-    <h1>Welcome, welcome! We've prepared our wonders.</h1>
-    <hr style="border: 0; border-top: 5px solid #ffffff; margin: 12px 0;">
-    <h3>Ah! I notice you came here from the youtube video. Well! This is your first challenge, find a way out.</h3>
-    <h4>Here's a tip that I must reminds you of, console is your best friend, that's all.</h4>
-    <br>
-    <h4>“How much better is silence? The coffee cup, the table.<br>How much better to sit alone, like a solitary sea-bird that spreads its wings on a stake.<br>Let me sit here forever with nothing but this coffee cup, this knife, this fork things in themselves, myself being myself.<br>One night, a star was riding through the clouds, and I said to the star, "Consume me."​‌​​​​‌‌‍​‌‌​‌‌‌‌‍​‌‌​​‌​​‍​‌‌​​‌​‌‍​​‌​​​​​‍​​‌‌‌​‌​‍​​‌​​​​​‍​‌​​​‌​‌‍​‌‌‌​​​​‍​‌‌​‌​​​‍​‌‌​​‌​‌‍​‌‌​‌‌​‌‍​‌‌​​‌​‌‍​‌‌‌​​‌​‍​‌‌​​​​‌‍​‌‌​‌‌​​</h4>
-<br>
-<br>
-<input type="text" id="answer5" placeholder="Your answer shall go here.">
-<button onclick="checkAnswer5()">Submit</button>
-
-    <script>console.log`Xgktpr​`
-    </script>
-</div>
-
-    <div id="huh" class="level">
-      <h1>...</h1>
-    <hr style="border: 0; border-top: 5px solid #ffffff; margin: 12px 0;">
-<h6>MzEzNTIwMzMyMDM4MjAzNTIwMzMyMDMxMzEyMDMxMjAzMTMzMjAzNTIwMzEzMjIwMzkyMDM1MjAzMTM5MjAzNTIwMzEzODIwMzIzMjIwMzUyMDMxMzgyMDMxMzYyMDMxMzgyMDMxMzUyMDM2MjAzOTIwMzEzMjIwMzU=</h6>
-<input type="text" id="answer10" placeholder="Input what you got from it here.">
-<button onclick="checkAnswer10()">Submit</button>
-  </div>
-
-
-  <div id="amelie" class="level">
-    <h1>I'm impressed, honestly.</h1>
-    <hr style="border: 0; border-top: 5px solid #ffffff; margin: 12px 0;">
-    <h3>ocheckamelieserverprofile, said it all, go do it and come back here.</h3>
-
-<input type="text" id="answer2" placeholder="Your answer shall go here.">
-<button onclick="checkAnswer2()">Submit</button>
-  </div>
-
-  <div id="theend" class="level">
-    <h1>You reached... the end?</h1>
-    <hr style="border: 0; border-top: 5px solid #ffffff; margin: 12px 0;">
-    <h3>Well, maybe not.</h3>
-    <h4>Let's see if you know.</h4>
-    <input type="text" id="answer6" placeholder="Your answer shall go here.">
-<button onclick="checkAnswer6()">Submit</button>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h4>yes.</h4>
-</div>
-
-    <div id="thetruetheend" class="level">
-      <h1>...</h1>
-    <hr style="border: 0; border-top: 5px solid #ffffff; margin: 12px 0;">
-<h6>Every key you've uncovered thus far has its place here. Top to bottom. But it will be missing something that you don't know.</h6>
-<input type="text" id="answer7" placeholder="...">
-<button onclick="checkAnswer7()">Submit</button>
-  </div>
-
-    <div id="xk9Qm2vLpZ7wR4tN" class="level">
-    <h1>Congratulation... not yet.</h1>
-    <hr style="border: 0; border-top: 5px solid #ffffff; margin: 12px 0;">
-    <h3>This puzzle will be continue on another website.</h3>
-    <script>
-      console.log`tiohmaxzing.dev, visit me.`
-    </script>
-</div>
-
+<div id="puzzle-content">Loading...</div>
 <footer>Made by Thomas :3</footer>
 
 <script>
+const API_URL = "https://api.tiohmaxzing.dev";
+let currentToken = null;
 
-async function sha256(str) {
-  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
-  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
-}
+function render(data) {
+  document.title = data.title || "Puzzle";
+  const container = document.getElementById("puzzle-content");
+  container.innerHTML = data.html;
 
-const SALT = "tiohmaxzing_";
-
-async function checkAnswer(inputId, correctHash, nextHash) {
-  const userAnswer = document.getElementById(inputId).value.trim().toLowerCase();
-  const hash = await sha256(SALT + userAnswer);
-  if (hash === correctHash) {
-    window.location.hash = nextHash;
-  } else {
-    alert("Wrong one. Try again.");
+  const btn = document.getElementById("submitBtn");
+  if (btn) {
+    btn.addEventListener("click", submitAnswer);
   }
 }
 
-function checkAnswer5() {
-  checkAnswer('answer5', 'a8236e5888a76ffe1674397f7ab7ca3562d243a0d409afe84a74ae82646a7fa2', 'huh');
-}
-function checkAnswer10() {
-  checkAnswer('answer10', '37e1ebd52ca9cfbb23414d6b585505191cedc96820c3500aed8f2505e8379530', 'amelie');
-}
-function checkAnswer2() {
-  checkAnswer('answer2', '870f9594c4f5f677ae2c8fc2382a119aa7832b07b98c9d8cad4b660fb229d43e', 'theend');
-}
-function checkAnswer6() {
-  checkAnswer('answer6', '6575daa74cb9b9c25f42fadbce6ea5a722416a250b0ab69f43eefb5e179524fa', 'thetruetheend');
-}
-function checkAnswer7() {
-  checkAnswer('answer7', '26fdd0228af6423a8aa7ef3095211ea6388c17c5869892b028ef51de4d474ace', 'xk9Qm2vLpZ7wR4tN');
-}
-
-function showLevel() {
-  document.querySelectorAll('.level').forEach(el => el.style.display = 'none');
-  const hash = location.hash || '#level1';
-  const target = document.querySelector(hash);
-  if (target) target.style.display = 'block';
-
-  if (hash === '#level2') {
-    console.log("Hi, this is the console log and it will be your best friend on this journey. Anyway, to go to the next level, simply remove #level2 in the link and add #simplicity");
+async function submitAnswer() {
+  const input = document.getElementById("ans");
+  const answer = input ? input.value : "";
+  try {
+    const res = await fetch(`${API_URL}/check`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ token: currentToken, answer }),
+    });
+    const data = await res.json();
+    if (data.correct) {
+      currentToken = data.token;
+      sessionStorage.setItem("puzzleToken", currentToken);
+      render(data);
+    } else {
+      alert("Wrong one. Try again.");
+    }
+  } catch (e) {
+    alert("Something went wrong, try again.");
   }
-
-  const titles = {
-    '#level1': 'Level 1 - Wonders Await',
-    '#huh': '...',
-    '#simplicity': 'Level Simplicity - The Nightmare',
-    '#amelie': 'Level 4 - The Image',
-    '#theend': 'Level 5 - The End?',
-    '#thetruetheend': 'Level 6 - The End.',
-    '#xk9Qm2vLpZ7wR4tN': 'You won.'
-  };
-  document.title = titles[hash] || 'Puzzle';
 }
-window.addEventListener('hashchange', showLevel);
-showLevel();
+
+async function init() {
+  const savedToken = sessionStorage.getItem("puzzleToken");
+  try {
+    if (savedToken) {
+      const res = await fetch(`${API_URL}/content`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token: savedToken }),
+      });
+      const data = await res.json();
+      if (!data.error) {
+        currentToken = savedToken;
+        render(data);
+        return;
+      }
+    }
+    const res = await fetch(`${API_URL}/start`, { method: "POST" });
+    const data = await res.json();
+    currentToken = data.token;
+    sessionStorage.setItem("puzzleToken", currentToken);
+    render(data);
+  } catch (e) {
+    document.getElementById("puzzle-content").innerText = "Failed to load puzzle. Refresh?";
+  }
+}
+
+init();
 </script>
 
 </body>
