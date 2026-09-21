@@ -25,6 +25,11 @@
       "green": 16,
       "blue": 16
     },
+    {
+  "spec": 1,
+  "name": "Coolvetica Regular",
+  "main": "https://dafont.com/coolvetica.font"
+  },
     "pixels": 384000,
     "imageStatistics": {
       "all": {
