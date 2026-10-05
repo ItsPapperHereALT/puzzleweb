@@ -1,0 +1,666 @@
+## Full summary of our chat so far
+
+### Your current device setup
+
+**Phone**
+
+* Xiaomi **Redmi Turbo 4 Pro**
+* China ROM / HyperOS CN
+* Model: `25053RT47C`
+* Codename: `onyx`
+* Manufacturer: Xiaomi
+* Bootloader locked
+* Developer options + USB debugging enabled
+* You are doing the Android work on **Windows**, not Linux.
+* You explicitly told me **not to give you Bash/Linux commands** for this work.
+
+**Watch**
+
+* Samsung **Galaxy Watch 7**
+* Global/international model
+* Wear OS
+* You wanted to keep using it rather than switching away from it.
+
+---
+
+# The original problem
+
+Galaxy Wearable would detect/pair with the Watch 7, but then eventually gave:
+
+> **“Your device is not compatible”**
+
+The important part was that your phone is a **China-region Xiaomi**, while your Watch 7 is a **global-region device**.
+
+We initially investigated this through ADB logs and reverse engineering instead of guessing.
+
+---
+
+# What the logs showed
+
+The Watch7 itself was being recognized correctly.
+
+The detected device looked roughly like:
+
+```text
+WearableDevice{
+ name=Galaxy Watch7 (A4QL),
+ category=Galaxy Watch7,
+ osVersion=36,
+ caller=com.samsung.android.app.watchmanager,
+ ...
+ rule=WearableDeviceRule{
+   packageName=com.samsung.wearable.watch7plugin
+   mainDeviceName=Galaxy Watch7,
+   minSdk=30,
+   maxSdk=1000,
+   minGMS=241017000,
+   wearableDetailType=WEAR_OS_WATCH
+ }
+}
+```
+
+The BLE connection itself also worked:
+
+```text
+BLEDeviceManager: connectViaBLE
+BluetoothLeService: initialize() : done
+BtGatt.GattService: registerClient()
+BLEDeviceManager: onGattConnected-connected
+BluetoothLeService: onConnectionStateChange:Client-connected!
+BluetoothLeService: onMtuChanged:Client-mtu : 517 ,status : 0
+BluetoothLeService: onServicesDiscovered:Client- GATT_SUCCESS
+```
+
+Samsung even entered its non-Samsung-device handling path:
+
+```text
+WatchDataManager: [GW] sendNonSamsungPopupRequest
+WatchDataManager: [GW] buildRequestPopUpData-{"msgId":"msg_popup_request","sender":"phone","data":{"category":2}}
+```
+
+So this was **not simply “Xiaomi phones can't use Galaxy Watch.”**
+
+---
+
+# The first confusing failure
+
+There was an intermediate failure:
+
+```text
+BLEDeviceManager: run - disconnectRunnable
+BLEDeviceManager: failure-NULL_POINTER
+BLEDeviceManager: failure() - callback
+WatchTransferRequesterImpl: WearableBLEListener:onComplete-isSuccess : false reason : NULL_POINTER
+WatchTransferFragment: status.observe-status ... FAIL
+WatchTransferFragment: [GW] showErrorDialog() problem = WATCH_RESET_NEEDED
+PairingFailDialogFragment: showErrorDialog() problem = WATCH_RESET_NEEDED
+```
+
+We investigated this, but later logs revealed the actual compatibility gate.
+
+---
+
+# The smoking-gun log
+
+Eventually we captured:
+
+```text
+GoogleRequirementUtils: isChinaEdition():ret = true
+```
+
+and then:
+
+```text
+BluetoothUUIDUtil: checkDeviceRegion, isWatchChinaModel [false], isPhoneChinaEdition [true]
+PairingFragment: handleAfterPaired-problem : WEAR_OS_NOT_SUPPORTED_PHONE
+```
+
+That was the key.
+
+Your phone:
+
+```text
+isPhoneChinaEdition = true
+```
+
+Your watch:
+
+```text
+isWatchChinaModel = false
+```
+
+Meaning:
+
+```text
+China phone + Global watch
+```
+
+Samsung's software considered that an unsupported region combination.
+
+---
+
+# We found the exact Java code responsible
+
+Using **JADX**, we traced the error into:
+
+```text
+PairingProblemChecker.problemCheckAfterPairing()
+```
+
+The original method was essentially:
+
+```java
+public static final Problem problemCheckAfterPairing(
+        WearableDevice wearableDevice,
+        BluetoothDevice bluetoothDevice,
+        boolean isConnectedSAKInsecure,
+        FragmentActivity activity) {
+
+    da.i.e(wearableDevice, "wearableDevice");
+    da.i.e(bluetoothDevice, "bluetoothDevice");
+    da.i.e(activity, "activity");
+
+    Problem problem = Problem.NO_PROBLEM;
+
+    if (wearableDevice.isWearOSDevice()) {
+
+        if (BluetoothUuidUtil.checkDeviceRegion(activity, bluetoothDevice)) {
+            return Problem.WEAR_OS_NOT_SUPPORTED_PHONE;
+        }
+
+        if (wearableDevice.isRestoredDevice() && !isConnectedSAKInsecure) {
+            BluetoothUuidUtil.isAutoConnectionMode(bluetoothDevice);
+        }
+
+    } else if (
+        wearableDevice.isEarBudType()
+        && PlatformUtils.isSamsungDevice()
+        && wearableDevice.hasDeviceId()
+        && !BluetoothUuidUtil.isSamsungBudsDevice(bluetoothDevice)
+    ) {
+        return Problem.FAKE_BUDS;
+    }
+
+    return problem;
+}
+```
+
+The important section was:
+
+```java
+if (BluetoothUuidUtil.checkDeviceRegion(activity, bluetoothDevice)) {
+    return Problem.WEAR_OS_NOT_SUPPORTED_PHONE;
+}
+```
+
+---
+
+# Then we found the actual region algorithm
+
+`BluetoothUuidUtil.checkDeviceRegion()` contained:
+
+```java
+public static boolean checkDeviceRegion(
+        Context context,
+        BluetoothDevice bluetoothDevice) {
+
+    ResultUUID resultUUIDIsLEChinaModel =
+        isLEChinaModel(bluetoothDevice);
+
+    if (resultUUIDIsLEChinaModel == ResultUUID.NULL) {
+        b.d(TAG, "checkDeviceRegion, isLEChinaModelUUID is null!!");
+        return false;
+    }
+
+    boolean z4 =
+        resultUUIDIsLEChinaModel == ResultUUID.TRUE;
+
+    boolean zIsChinaEdition =
+        GoogleRequirementUtils.isChinaEdition(context);
+
+    b.a(
+        TAG,
+        "checkDeviceRegion, isWatchChinaModel ["
+        + z4
+        + "], isPhoneChinaEdition ["
+        + zIsChinaEdition
+        + "]"
+    );
+
+    return zIsChinaEdition ^ z4;
+}
+```
+
+The final line was the important part:
+
+```java
+return zIsChinaEdition ^ z4;
+```
+
+That's XOR.
+
+Therefore:
+
+| Phone  | Watch  | Result       |
+| ------ | ------ | ------------ |
+| Global | Global | Allowed      |
+| China  | China  | Allowed      |
+| China  | Global | **Rejected** |
+| Global | China  | **Rejected** |
+
+Your exact situation was the third row.
+
+---
+
+# We checked other possible compatibility gates
+
+We searched both Galaxy Wearable and the Watch7 plugin for things like:
+
+```text
+not_compatible
+unsupported device
+device_not_supported
+device_not_compatible
+phone_not_supported
+unsupported_phone
+not_supported
+compatible
+Build.MANUFACTURER
+Build.MODEL
+isDeviceSupported
+isSupportedDevice
+isSupportDevice
+isPhoneSupported
+checkDevice
+checkCompatibility
+isCompatible
+compatibleDevice
+```
+
+Most of the results were irrelevant.
+
+The Watch7 plugin does have:
+
+```java
+isXiaomiDevice()
+```
+
+which checks:
+
+```java
+Build.MANUFACTURER
+```
+
+and compares it to:
+
+```text
+XIAOMI
+```
+
+But its usage was associated with an update-installation path, not the pairing compatibility failure.
+
+So we did **not** need to remove Xiaomi detection.
+
+---
+
+# We also checked the pre-pairing logic
+
+There is another check involving:
+
+```smali
+PlatformUtils.isNotSupportableVendorForWearOSWatch()
+```
+
+and another `WEAR_OS_NOT_SUPPORTED_PHONE` possibility.
+
+But your logs demonstrated that you were getting past the pre-pairing stage and reaching the **post-pairing region check**.
+
+So we left that alone.
+
+Likewise, the China phone logic in `problemCheckBeforePairing()` had separate Google Play Services requirements. China editions actually take a different path there, so that wasn't the cause of your failure either.
+
+---
+
+# APKs involved
+
+### Galaxy Wearable
+
+Package:
+
+```text
+com.samsung.android.app.watchmanager
+```
+
+Version:
+
+```text
+2.2.70.26060861
+```
+
+Version code:
+
+```text
+2126060861
+```
+
+Original APK path retrieved through ADB:
+
+```text
+package:/data/app/~~Yd6kj-lYYWP9fBh0lENrGg==/com.samsung.android.app.watchmanager-Beh1vf7fbCHPPFjvjh5eYQ==/base.apk
+```
+
+### Watch7 plugin
+
+Package:
+
+```text
+com.samsung.wearable.watch7plugin
+```
+
+Version:
+
+```text
+2.2.15.26071051
+```
+
+Version code:
+
+```text
+126071051
+```
+
+### Samsung accessory package
+
+```text
+com.samsung.accessory.paranmgr
+```
+
+Version:
+
+```text
+8.5.26070351
+```
+
+---
+
+# Your reverse-engineering tools
+
+You used:
+
+### JADX
+
+For:
+
+* decompiling the APK
+* finding Java methods
+* searching classes
+* understanding the compatibility logic
+
+### APKToolGUI 3.4.0.0
+
+For:
+
+* decompiling APKs
+* editing/rebuilding Smali
+* aligning
+* signing
+
+### Windows Explorer / editor
+
+For locating and modifying the `.smali` files.
+
+Everything for this Android modification was done on **Windows**.
+
+---
+
+# The first patch went wrong
+
+We initially tried modifying the Smali around the region check.
+
+That accidentally left something like:
+
+```smali
+move-result p3
+```
+
+without the corresponding preceding:
+
+```smali
+invoke-static ...
+```
+
+The Android verifier rejected the resulting method.
+
+That caused the Galaxy Wearable app to get stuck/spin endlessly.
+
+We diagnosed that from the raw Smali and logs.
+
+---
+
+# The successful solution
+
+Instead of carefully removing only the region check, you chose the nuclear option:
+
+Replace the **entire** `problemCheckAfterPairing()` method with a method that simply returns:
+
+```text
+NO_PROBLEM
+```
+
+The final replacement was:
+
+```smali
+.method public static final problemCheckAfterPairing(Lcom/samsung/android/app/twatchmanager/connectionmanager/define/WearableDevice;Landroid/bluetooth/BluetoothDevice;ZLandroidx/fragment/app/FragmentActivity;)Lcom/samsung/android/app/watchmanager/setupwizard/pairing/PairingProblemChecker$Problem;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/samsung/android/app/watchmanager/setupwizard/pairing/PairingProblemChecker$Problem;->NO_PROBLEM:Lcom/samsung/android/app/watchmanager/setupwizard/pairing/PairingProblemChecker$Problem;
+
+    .line 2
+    return-object v0
+.end method
+```
+
+This effectively tells Galaxy Wearable:
+
+> “The post-pairing compatibility check found no problem.”
+
+It bypasses:
+
+* the region mismatch check
+* the restored-device check in this method
+* the fake Buds check in this method
+
+For your fresh Watch7 pairing, that was enough.
+
+---
+
+# Rebuilding and signing
+
+You rebuilt the modified APK using APKToolGUI.
+
+It successfully completed:
+
+```text
+===== [Aligning] =====
+Input file: C:\Users\tiohm\Desktop\watchmanager
+Done
+
+===== [Signing] =====
+Input file: C:\Users\tiohm\Desktop\watchmanager
+Done
+
+Delete file "C:\Users\tiohm\Desktop\watchmanager signed.apk.idsig"
+
+===== [All done!] =====
+```
+
+---
+
+# Why you had to uninstall the original app
+
+The original Galaxy Wearable installation came from Google Play:
+
+```text
+installerPackageName=com.android.vending
+initiatingPackageName=com.android.vending
+```
+
+Your rebuilt APK was signed with a different signing key.
+
+Android therefore would not allow the modified APK to replace the Play Store version as an update.
+
+So you uninstalled the original Galaxy Wearable and then installed the modified one.
+
+You installed it from Windows with:
+
+```cmd
+adb install "C:\Users\tiohm\Desktop\watchmanager signed.apk"
+```
+
+ADB returned:
+
+```text
+Performing Streamed Install
+Success
+```
+
+---
+
+# The successful pairing
+
+After installing the patched Galaxy Wearable, pairing proceeded normally.
+
+You got through:
+
+```text
+software download
+```
+
+then:
+
+```text
+Getting ready to connect...
+```
+
+then:
+
+```text
+Finishing up
+```
+
+and finally:
+
+# CONNECTED
+
+That confirmed that bypassing the post-pairing check was enough.
+
+---
+
+# Samsung Health
+
+This was the biggest confirmation.
+
+**Samsung Health works perfectly with the Watch 7.**
+
+The watch is not merely technically paired. The actual Samsung Health ecosystem is functioning.
+
+That means the workaround is useful in practice, not just a cosmetic bypass.
+
+---
+
+# Current minor issues
+
+Galaxy Wearable isn't 100% perfect visually.
+
+You noticed:
+
+* The watch name isn't displayed properly.
+* Changing the watch face is somewhat awkward.
+* The current watch face itself displays correctly.
+* Everything else is basically fine.
+* The watch itself works normally.
+* Samsung Health works.
+
+You considered these acceptable because the important functionality is working.
+
+---
+
+# You decided not to publish it
+
+We discussed potentially posting the workaround to places like XDA.
+
+You decided **not to**.
+
+Your reasoning was basically that you didn't want to:
+
+* deal with moderator issues
+* become the person responsible for supporting everyone's weird Samsung/Xiaomi combinations
+* turn your working private setup into a public support project
+
+So the workaround is staying private.
+
+---
+
+# Backup recommendation
+
+The patched APK should be kept somewhere safe as a backup.
+
+The important combination to preserve is:
+
+```text
+Galaxy Wearable
+2.2.70.26060861
+```
+
+with:
+
+```text
+PairingProblemChecker.problemCheckAfterPairing()
+```
+
+patched to always return:
+
+```text
+NO_PROBLEM
+```
+
+Your Watch7 plugin is:
+
+```text
+2.2.15.26071051
+```
+
+If Galaxy Wearable gets updated later and breaks again, this known-good patched version is the baseline to return to.
+
+---
+
+# Current known-good state
+
+So the final situation is:
+
+```text
+Redmi Turbo 4 Pro
+        │
+        │ HyperOS China ROM
+        ▼
+Patched Galaxy Wearable 2.2.70.26060861
+        │
+        │ post-pairing region check bypassed
+        ▼
+Galaxy Watch 7 Global
+        │
+        ▼
+CONNECTED
+        │
+        ├── Galaxy Wearable: works
+        ├── Watch faces: works, slightly awkward UI
+        ├── Watch: works normally
+        └── Samsung Health: WORKS PERFECTLY
+```
+
+The key discovery was that **the hardware and BLE connection were never the real problem**. Samsung's post-pairing software was rejecting your **China-phone/global-watch region mismatch**.
+
+And the final workaround was to make that specific post-pairing checker return `NO_PROBLEM`.
+
+That is the current known-good solution and should be treated as the baseline if we revisit the Watch 7 issue later.
