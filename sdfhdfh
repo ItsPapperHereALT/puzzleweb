@@ -1,0 +1,713 @@
+10-05 20:17:14.030 W/dex2oat64( 9758): Verification error in com.samsung.android.app.watchmanager.setupwizard.pairing.PairingProblemChecker$Problem com.samsung.android.app.watchmanager.setupwizard.pairing.PairingProblemChecker.problemCheckAfterPairing(com.samsung.android.app.twatchmanager.connectionmanager.define.WearableDevice, android.bluetooth.BluetoothDevice, boolean, androidx.fragment.app.FragmentActivity)
+10-05 20:17:14.030 W/dex2oat64( 9758): com.samsung.android.app.watchmanager.setupwizard.pairing.PairingProblemChecker$Problem com.samsung.android.app.watchmanager.setupwizard.pairing.PairingProblemChecker.problemCheckAfterPairing(com.samsung.android.app.twatchmanager.connectionmanager.define.WearableDevice, android.bluetooth.BluetoothDevice, boolean, androidx.fragment.app.FragmentActivity) failed to verify: com.samsung.android.app.watchmanager.setupwizard.pairing.PairingProblemChecker$Problem com.samsung.android.app.watchmanager.setupwizard.pairing.PairingProblemChecker.problemCheckAfterPairing(com.samsung.android.app.twatchmanager.connectionmanager.define.WearableDevice, android.bluetooth.BluetoothDevice, boolean, androidx.fragment.app.FragmentActivity): [0x17] copyRes1 v5<- result0 type=Undefined
+10-05 20:18:35.825 I/tUHM:DashboardContentProvider( 6801): onCreate()
+10-05 20:18:35.829 I/tUHM:DashboardDatabase( 6801): getInstance() : CREATE new instance
+10-05 20:18:35.844 I/tUHM:DashboardContentProvider( 6801): setDatabase() : current version = 2
+10-05 20:18:35.871 I/tUHM:TWatchManagerApplication( 6801): onCreate() starts ... myProcessName : com.samsung.android.app.watchmanager
+10-05 20:18:35.873 I/tUHM:PluginMessenger( 6801): getStandAloneExistPackageSet-added - [com.samsung.wearable.watch7plugin]
+10-05 20:18:35.873 I/tUHM:PluginMessenger( 6801): bindAllSupportSwitchConnection-bindPackageSet : [com.samsung.wearable.watch7plugin]
+10-05 20:18:35.873 I/tUHM:PluginMessenger( 6801): bindServiceToPackage : com.samsung.wearable.watch7plugin
+10-05 20:18:35.873 I/tUHM:PluginMessenger( 6801): bindServiceToPackage : com.samsung.wearable.watch7plugin - request bind
+10-05 20:18:35.873 I/tUHM:PluginMessenger( 6801): convertImplicitToExplicitIntent
+10-05 20:18:35.873 I/tUHM:PluginMessenger( 6801): convertImplicitToExplicitIntent - ComponentInfo{com.samsung.wearable.watch7plugin/com.samsung.android.companionservice.pluginenabler.PluginMessengerService}
+10-05 20:18:35.874 I/tUHM:AppUtil( 6801): hasInstallPermission() context : com.samsung.android.app.twatchmanager.TWatchManagerApplication@e86a279 hasPermission(check self permission) : false
+10-05 20:18:35.874 I/tUHM:TWatchManagerApplication( 6801): checkRestart() starts...
+10-05 20:18:35.878 I/tUHM:DeviceDatabaseModule( 6801): onCreate-called
+10-05 20:18:35.878 I/tUHM:DeviceDatabaseModule( 6801): onOpen-called
+10-05 20:18:35.879 I/tUHM:HostManagerUtilsDBOperations( 6801): getSettingsDBValueString-key : resume_connection_after_process_kill result : null(default : )
+10-05 20:18:35.879 E/tUHM:AppUtil( 6801): getVersionName() packageName : com.samsung.android.app.watchmanager versionName : 2.2.70.26060861
+10-05 20:18:35.879 I/tUHM:TWatchManagerApplication( 6801): AppVersion : 2.2.70.26060861
+10-05 20:18:35.908 I/tUHM:LaunchIntentRepositoryImpl( 6801): [GW] printIntentData-**** LaunchIntentRepository data ****
+10-05 20:18:35.908 I/tUHM:LaunchIntentRepositoryImpl( 6801): [GW] scheme : null
+10-05 20:18:35.909 I/tUHM:LaunchIntentRepositoryImpl( 6801): [GW] data_string : null
+10-05 20:18:35.909 I/tUHM:LaunchIntentRepositoryImpl( 6801): [GW] profile : UserHandle{0}
+10-05 20:18:35.909 I/tUHM:LaunchIntentRepositoryImpl( 6801): [GW] action : android.intent.action.MAIN
+10-05 20:18:35.909 I/tUHM:DeviceIdleServiceUtil( 6801): addToPowerSaveAllowlistApp-starts...
+10-05 20:18:35.909 I/tUHM:DeviceIdleServiceUtil( 6801): isIgnoringNeeded-isIgnoringNeeded : true
+10-05 20:18:35.910 I/tUHM:SetupWizardWelcomeActivity( 6801): onCreate-current version : 2.2.70.26060861 ONE UI version : -1
+10-05 20:18:35.910 I/tUHM:ParentalRestrictionChecker( 6801): registerObserver-starts... com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity$initParentCareObserver$2@917dc2c
+10-05 20:18:35.910 E/tUHM:ParentalRestrictionChecker( 6801): registerAppsContentObserver-failed java.lang.SecurityException: Failed to find provider com.samsung.android.app.parentalcare.provider for user 0; expected to find a valid ContentProvider for this authority
+10-05 20:18:35.912 I/tUHM:PlatformUtils( 6801): setStatusBarOpenByNotification(com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285)
+10-05 20:18:35.914 I/tUHM:InstallationUtils( 6801): hasInstallPermission() context : com.samsung.android.app.twatchmanager.TWatchManagerApplication@e86a279 hasPermission(check self permission) : false
+10-05 20:18:35.914 I/tUHM:PlatformUtils( 6801): isSamsungDeviceWithCustomBinary, res [false]
+10-05 20:18:35.914 I/tUHM:FeatureUtil( 6801): checkSupportSemAPI
+10-05 20:18:35.916 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:35.919 I/tUHM:SetupWizardWelcomeActivity( 6801): onResume-starts...
+10-05 20:18:35.919 I/tUHM:RemoveTaskChecker( 6801): isRunning-isRunning ? false
+10-05 20:18:35.919 I/tUHM:FragmentUpdater( 6801): onResume-has pending transaction ? null
+10-05 20:18:35.921 I/tUHM:SetupWizardWelcomeActivity( 6801): [GW] onCreate-*** device DB *** count : 0
+10-05 20:18:35.944 I/tUHM:PlatformUtils( 6801): isMaximumPowerSavingMode, res [false]
+10-05 20:18:35.950 E/tUHM:ParentalRestrictionChecker( 6801): isAllowed-doesn't support parental care
+10-05 20:18:35.963 I/tUHM:HistoryDatabase( 6801): onCreate-called
+10-05 20:18:35.964 I/tUHM:HistoryDatabase( 6801): onOpen-called
+10-05 20:18:35.965 I/tUHM:SetupWizardWelcomeActivity( 6801): [GW] onCreate-*** LaunchHistory *** count : 0
+10-05 20:18:35.979 I/tUHM:HostManagerUtilsDBOperations( 6801): updateSettingsDBValue-key(resume_connection_after_process_kill), value()
+10-05 20:18:35.980 I/tUHM:PluginUsageTrackerImpl( 6801): supportRemoveNotUsedPlugin-supported ? false
+10-05 20:18:35.982 I/tUHM:AppInfoDatabase( 6801): onCreate-called
+10-05 20:18:35.982 I/tUHM:AppInfoDatabase( 6801): onOpen-called
+10-05 20:18:35.987 I/tUHM:RegistryAppsDBManager( 6801): queryAppRegistryData-result : null
+10-05 20:18:35.987 I/tUHM:[Update]UpdateManager( 6801): updateGWInfoIfUpdated-isUpdated ? false
+10-05 20:18:35.988 I/tUHM:PermissionUtils( 6801): arePermissionsGranted-android.permission.BLUETOOTH_SCAN is not granted
+10-05 20:18:35.988 I/tUHM:PermissionUtils( 6801): arePermissionsGranted-android.permission.BLUETOOTH_CONNECT is not granted
+10-05 20:18:35.988 I/tUHM:PermissionUtils( 6801): arePermissionsGranted-android.permission.NEARBY_WIFI_DEVICES is not granted
+10-05 20:18:35.988 I/tUHM:PermissionUtils( 6801): arePermissionsGranted-android.permission.READ_PHONE_STATE is not granted
+10-05 20:18:35.988 I/tUHM:PermissionUtils( 6801): arePermissionsGranted-android.permission.READ_PHONE_NUMBERS is not granted
+10-05 20:18:35.988 I/tUHM:SetupWizardWelcomeActivity( 6801): startsNetworkCheck-starts...
+10-05 20:18:35.988 I/tUHM:NetworkUsageManager( 6801): show starts
+10-05 20:18:35.988 I/tUHM:PlatformUtils( 6801): isSamsungChinaModel, res [false], salesCode [null]
+10-05 20:18:35.988 I/tUHM:NetworkUsageManager( 6801): getDoNotShowNetworkDialog, result [false]
+10-05 20:18:35.988 I/tUHM:NetworkUsageManager( 6801): showNetworkDialog() isSamsungChinaModel : false doNotShowNetworkDialog : false
+10-05 20:18:35.988 I/tUHM:NetworkUsageManager( 6801): continueProcess starts
+10-05 20:18:35.988 I/tUHM:SetupWizardWelcomeActivity( 6801): NetworkUsageManager :: onContinue
+10-05 20:18:35.989 I/tUHM:DeviceNameManager( 6801): checkTimeToRefreshNameData() starts...
+10-05 20:18:35.990 I/tUHM:DeviceNameManager( 6801): checkTimeToRefreshNameData() previous is null, initial case ... will return true
+10-05 20:18:35.990 I/tUHM:DeviceNameManager( 6801): checkTimeToRefreshNameData() needRefresh : true
+10-05 20:18:35.992 W/tUHM:ScspRequestTimeChecker( 6801): getPreviousScspDownloadCheckTime - time : SCSP_CONFIGURATION_TIME / Text '' could not be parsed at index 0 
+10-05 20:18:35.992 I/tUHM:ScspRequestTimeChecker( 6801): checkTimeInterval-result : true
+10-05 20:18:35.992 I/tUHM:ScspRequestTimeChecker( 6801): setPreviousScspDownloadCheckTime-set SCSP_CONFIGURATION_TIME current time : 2026-10-05 20:18:35
+10-05 20:18:35.995 I/tUHM:ScspHelper( 6801): downloadConfiguration-starts ...
+10-05 20:18:35.995 I/tUHM:[Update]BackgroundUpdateScheduler( 6801): [GW] scheduleNextUpdateCheck-called from (APP_LAUNCH)
+10-05 20:18:35.995 I/tUHM:[Update]UpdateUtil( 6801): isBackgroundTestMode() isBackgroundMode : false
+10-05 20:18:35.995 I/tUHM:[Update]UpdateUtil( 6801): isBackgroundTestMode() isBackgroundMode : false
+10-05 20:18:35.995 I/tUHM:[Update]BackgroundUpdateScheduler( 6801): [GW] getDelayTimeToSchedule-current : 2026-10-05 20:18:35 next : 2026-10-06 04:14:25 diff : 28549875 ms
+10-05 20:18:35.995 I/tUHM:[Update]UpdateUtil( 6801): isBackgroundTestMode() isBackgroundMode : false
+10-05 20:18:35.996 I/tUHM:[Update]BackgroundUpdateScheduler( 6801): isPossibleToScheduleNextUpdate-starts ...  engApk : false engBuild : false testMode : false initialDelay : 28549875 deviceCount : 0
+10-05 20:18:35.996 I/tUHM:SetupWizardWelcomeActivity( 6801): startsCheckSwitching-starts...
+10-05 20:18:35.996 I/tUHM:AutoSwitchIntentService( 6801):  isRunning() returns : false
+10-05 20:18:35.996 I/tUHM:HostManagerUtilsDBOperations( 6801): getSettingsDBValueString-key : auto_update_option result : null(default : 1001)
+10-05 20:18:35.997 I/tUHM:SALogUtil( 6801): registerPrefDetailSALog() key : DRAW0108 detail : NEVER
+10-05 20:18:35.997 I/tUHM:SALogUtil( 6801): registerPrefDetailSALog() key : DRAW002 value : 0
+10-05 20:18:36.003 I/tUHM:ScspHelper( 6801): downloadConfiguration-result : /data/user/0/com.samsung.android.app.watchmanager/files/scsp/configuration/galaxy_wearable_configuration.json
+10-05 20:18:36.004 I/tUHM:SALogUtil( 6801): registerPrefDetailSALog() key : DEVICE001 detail : 
+10-05 20:18:36.011 I/tUHM:SetupWizardWelcomeActivity( 6801): [GW] initOthers-auto update setting : NEVER device count : 0 categories : 
+10-05 20:18:36.019 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.019 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:36.019 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.019 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.051 I/tUHM:WorkManagerUtils( 6801): isWorkScheduled-workInfoList size : 0
+10-05 20:18:36.053 I/tUHM:WorkManagerUtils( 6801): isWorkRunning-workInfoList size : 0
+10-05 20:18:36.053 I/tUHM:[AutoSwitch]BackgroundAutoSwitchScheduler( 6801): isScheduledOrWorking() isScheduled : false isRunning : false
+10-05 20:18:36.056 I/tUHM:WorkManagerUtils( 6801): isWorkRunning-workInfoList size : 0
+10-05 20:18:36.061 I/tUHM:WorkManagerUtils( 6801): isWorkScheduled-workInfoList size : 0
+10-05 20:18:36.061 I/tUHM:DeviceManager( 6801): clearDevices-enter
+10-05 20:18:36.062 I/tUHM:DisplayFragmentCheckerImpl( 6801): constructor- set fragmentType with old way : NONE
+10-05 20:18:36.062 I/tUHM:DisplayFragmentCheckerImpl( 6801): constructor- set fragmentType with new way : NONE
+10-05 20:18:36.062 I/tUHM:DisplayFragmentCheckerImpl( 6801): constructor-check default device list case : NONE
+10-05 20:18:36.062 I/tUHM:PurposeDeterminerImpl( 6801): determinePurpose-purpose : null
+10-05 20:18:36.062 I/tUHM:LaunchIntentRepositoryImpl( 6801): restoreIntentData-hasBackupFile : false
+10-05 20:18:36.062 I/tUHM:PlatformUtils( 6801): getCountryISO2():tel.getNetworkCountryIso() = vn
+10-05 20:18:36.062 I/tUHM:SetupWizardWelcomeActivity( 6801): [GW] checkPermissions-purpose : INITIAL_LAUNCH_SCENARIO isKRorCHN : false
+10-05 20:18:36.063 I/tUHM:PlatformNetworkUtils( 6801): isDataNetworkConnected() ** new logic result : true (** wifi connected ? true)
+10-05 20:18:36.063 I/tUHM:PlatformNetworkUtils( 6801): isDataNetworkConnected() isConnected : true
+10-05 20:18:36.064 E/tUHM:[Update]UpdateUtil( 6801): getPreviousUpdateCheckTime()-parse date error : Text '' could not be parsed at index 0
+10-05 20:18:36.064 I/tUHM:[Update]UpdateUtil( 6801): getPreviousUpdateCheckTime-tUHMPreviouslyUpdatedAt : null
+10-05 20:18:36.064 I/tUHM:[Update]UpdateManager( 6801): isUpdateCheckTime() previouslyUpdatedAt is null, initial case ... will return true
+10-05 20:18:36.064 I/tUHM:[Update]UpdateUtil( 6801): updatePreviousTime() starts...com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285
+10-05 20:18:36.064 I/tUHM:[Update]UpdateUtil( 6801): updatePreviousTime() update tUHM previous update time : 2026-10-05 20:18:36
+10-05 20:18:36.064 I/tUHM:SetupWizardWelcomeActivity( 6801): [GW] startInitialUpdateCheck- do update check on the foreground at the first time
+10-05 20:18:36.065 I/tUHM:FragmentUpdater( 6801): updateFragment-fragmentName:LoadingFragment bundle:Bundle[{loading_type=2}], option:replace : true add : false pop : false force : true
+10-05 20:18:36.065 I/tUHM:FragmentUpdater( 6801): isActivityDestroyed-will return ? false
+10-05 20:18:36.065 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-current state : RESUMED
+10-05 20:18:36.065 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-replace fragment ...
+10-05 20:18:36.066 D/FragmentManager( 6801): androidx.fragment.app.m1@6b65bae put LoadingFragment{2283d4f} (fd1940c4-26c1-4961-aa5a-3efa678ee667 id=0x7f0800cf tag=tUHMFragment) to Active Fragments, mActive size: 1
+10-05 20:18:36.067 I/tUHM:ViewOrientationAdjuster( 6801): init-forcePortraitMode : true orientation : Portrait multiWindow : false width : 394 height : 853 screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:36.081 I/tUHM:LargeSizeTextView( 6801): reCalcTextSizeByFontScale-fontScale : 0.9 limitedScale : 1.2
+10-05 20:18:36.081 I/tUHM:LargeSizeTextView( 6801): reCalcTextSizeByFontScale-from -> 35.0
+10-05 20:18:36.081 I/tUHM:LargeSizeTextView( 6801): reCalcTextSizeByFontScale-to -> 37.8
+10-05 20:18:36.085 I/tUHM:[Update]LoadingFragment( 6801): onViewCreated() starts...
+10-05 20:18:36.085 I/tUHM:ViewOrientationAdjuster( 6801): setupScrollPadding-normal case : 96.0
+10-05 20:18:36.085 I/tUHM:OrientationBaseFragment( 6801): initScrollView-isPortrait : true leftFrameScrollView : com.samsung.android.app.watchmanager.ui.FadingEdgeNestedScrollView{b992013 VFED..... ......I. 0,0-0,0 #7f0801a6 app:id/left_frame_scroll}
+10-05 20:18:36.085 I/tUHM:UIUtils( 6801): getOnboardingScreenType-smallestWidth : 394(394 x 853)
+10-05 20:18:36.085 I/tUHM:[Update]LoadingFragment( 6801): onViewCreated-loadingType : 2 mBTAddress : 
+10-05 20:18:36.085 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.085 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.091 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.091 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:36.091 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.092 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.094 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.094 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:36.094 I/tUHM:[Update]UpdateUtil( 6801): checkQAStoreUseConfirm-it is not QA store mode, always return true
+10-05 20:18:36.094 I/tUHM:[Update]UpdateUtil( 6801): checkQAStoreUseConfirm() end ... result : true
+10-05 20:18:36.094 I/tUHM:UIUtils( 6801): getOnboardingScreenType-smallestWidth : 394(394 x 853)
+10-05 20:18:36.094 I/tUHM:[Update]LoadingFragment( 6801): runUpdateManager-starts...
+10-05 20:18:36.095 I/tUHM:[Update]LoadingFragment( 6801): onResume-starts...
+10-05 20:18:36.096 I/tUHM:[Update]UpdateInstallData( 6801): isNonSamsungInstallRequested() requested : false
+10-05 20:18:36.096 I/tUHM:FragmentUpdater( 6801): executeTransaction-executed ...
+10-05 20:18:36.099 I/tUHM:FadingEdgeNestedScrollView( 6801): init-navigationBarHeight : 0, bottomButtonHeight : 299
+10-05 20:18:36.099 I/tUHM:FadingEdgeNestedScrollView( 6801): init-navigationBarHeight : 0, bottomButtonHeight : 299
+10-05 20:18:36.126 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.126 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.128 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.128 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:36.128 I/tUHM:[Update]UpdateUtil( 6801): checkQAStoreUseConfirm-it is not QA store mode, always return true
+10-05 20:18:36.128 I/tUHM:[Update]UpdateUtil( 6801): checkQAStoreUseConfirm() end ... result : true
+10-05 20:18:36.128 I/tUHM:[Update]UpdateManager( 6801): startUpdateChecking() starts..
+10-05 20:18:36.129 I/tUHM:[Update]UpdateManager( 6801): runUpdateCheckThreadAfterRulesSync-needGMS : false
+10-05 20:18:36.129 I/tUHM:[Update]UpdateManager( 6801): startUpdateCheckTask() extuk : 05357d9e80cc3f9d
+10-05 20:18:36.129 I/tUHM:[Update]UpdateManager( 6801): startUpdateCheckTimer() starts...baseWaitTime : 10000 maxWaitTime : 2000
+10-05 20:18:36.129 I/tUHM:PlatformNetworkUtils( 6801): isDataNetworkConnected() ** new logic result : true (** wifi connected ? true)
+10-05 20:18:36.129 I/tUHM:PlatformNetworkUtils( 6801): isDataNetworkConnected() isConnected : true
+10-05 20:18:36.129 I/tUHM:[SA][Update]CountryCodeGenerator( 6801): requestCountryCodeData() only used to the samsung device : false
+10-05 20:18:36.129 I/tUHM:[Update]UpdateManager( 6801): startUpdateCheckTask() country code received ...  cc : NONE
+10-05 20:18:36.129 I/tUHM:PlatformNetworkUtils( 6801): getCSC() final result, csc : ETC
+10-05 20:18:36.129 I/tUHM:[Update]UpdateUtil( 6801): getPD()
+10-05 20:18:36.133 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.133 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:36.133 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.133 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.133 I/tUHM:PlatformUtils( 6801): getResolution()::Resolution is fixed as 1920x1080 for nonSamsung device.
+10-05 20:18:36.133 I/tUHM:PlatformUtils( 6801): getResolution = 1920x1080
+10-05 20:18:36.133 I/tUHM:PlatformNetworkUtils( 6801): getMNC() mnc : 04
+10-05 20:18:36.133 I/tUHM:PlatformNetworkUtils( 6801): getMCC() mcc : 452
+10-05 20:18:36.136 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.136 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:36.136 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.136 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.136 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.136 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.136 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.136 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:36.138 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:36.138 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:36.138 I/tUHM:[Update]UpdateUtil( 6801): checkQAStoreUseConfirm-it is not QA store mode, always return true
+10-05 20:18:36.138 I/tUHM:[Update]UpdateUtil( 6801): checkQAStoreUseConfirm() end ... result : true
+10-05 20:18:36.139 I/tUHM:[Update]StubAPIHelper( 6801): [GW] constructor-Is configuration stub URL global ? false
+10-05 20:18:36.167 I/tUHM:[Update]UpdateUtil( 6801): isLocalUpdateTestModeEnabled() testMode : , isToggleButtonOn: false
+10-05 20:18:36.168 I/tUHM:UpdateCheckTask( 6801): [GW] run-start update check thread... mPackageNameSet : [com.samsung.android.app.watchmanager]
+10-05 20:18:36.169 I/tUHM:UpdateCheckTask( 6801): getPackageVersionCode() com.samsung.android.app.watchmanager
+10-05 20:18:36.170 I/tUHM:UpdateCheckTask( 6801): getPackageVersionCode() return info... *2126060861*(2.2.70.26060861)
+10-05 20:18:36.170 I/tUHM:[Update]StubAPIHelper( 6801): [GW] addCommonParamsForStubAPI-mcc : 452 mnc : 04 sdkVer : 36 deviceId : 1920x1080 pd : 0
+10-05 20:18:36.171 I/tUHM:[Update]StubAPIHelper( 6801): handleStubAPIRequest() isQAStoreMode : false hasTokenData : false
+10-05 20:18:36.174 I/tUHM:[Update]StubAPIHelper( 6801): [GW] handleStubAPIRequest-request URL: HpNzFw33yFuUOh1PAawH6Jq00+TRj7e2QaauWRN2ss7szsc19Zhkii8CBhgW4itZIUowWi+W26bTPcf0KTVzJ+nBqrGOTFuzrhD+3IbSD4WvQNtBgBqobrmaM3uQWAcLuaHrZzqYRKd3q8x3Jot/IM9NicFnMfImUCfORwTNGRGpMHylcc5PjooRcKPL+v7cUuTGD4J3+NJKG57et7SsvRNifZmjdmkMWFYZi0C3fStgVACsaSj3exDw4wMo7QY4lYHQTg+QGYYwDPPkqT4l1qKvPvYof6GBOi/fqKOncN/jKX/OflxSGiaQobUKdnZ/NPfbAHIEhP+6QXh9oaqCIw== + csc=ETC&sdkVer=36&systemId=1791001244708&abiType=64&oneUiVersion=-1&pd=0&cc=NONE&extuk=05357d9e80cc3f9d&versionCode=2126060861&installInfo=Y&locale=en_US
+10-05 20:18:36.517 I/tUHM:DeviceNameManager( 6801): getDeviceToken():result_code = 200
+10-05 20:18:36.518 I/tUHM:DeviceNameManager( 6801): getDeviceToken():res = {"deviceToken":"eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJTYW1zdW5nRGV2aWNlIiwic3ViIjoiRS00NWM5Yjc0NWMwYmYxMWYxYjM1MjgxODE5MDA5NzExZSIsImF1ZCI6IjM5a2M0bzhjMTAiLCJleHAiOjE3OTE4MTExMTYsImR2Y1R5cGUiOiIwMSJ9.Ed1G6qpTuTnCUG2QYIha31B8Yq6xBVo83eEvB4IbaVWH-moMQcXh76jL-n6SBSfQLZtApq7yrTiztPxIhHMTk25Qgi_HKyWdRY4bTJMXqDc9guldQxCIWUtAgvqGkd7tEKy8eiNWBxPE9megx9vGTF3ii4FzPlBsm-nocXP0K-w5s4tcT74VI8A7yd2cxDSJTHa2ztt3r12pYDXp6n3MowhGcQu8q6juScTZFmz8pLOunwCx_lHBf9JnU212bvCTODvn21ioP0whbz8HhCPiK9U69pP673lYJ86yjEr1NTzO4OliHJipq5vIdtfU6-G-ECnEtk-S6Evfw2HnPin3oA","expires":604800}
+10-05 20:18:37.030 I/tUHM:DeviceNameManager( 6801): getDeviceNames():result_code = 200
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): getDeviceNames():res = {"groups":[{"deviceGroup":33,"models":[{"deviceCode":"17152","name":"Galaxy Watch4 Classic"},{"deviceCode":"17153","name":"Galaxy Watch4 Classic"},{"deviceCode":"17154","name":"Galaxy Watch4 Classic"},{"deviceCode":"17155","name":"Galaxy Watch4 Classic"},{"deviceCode":"17156","name":"Galaxy Watch4"},{"deviceCode":"17157","name":"Galaxy Watch4"},{"deviceCode":"17158","name":"Galaxy Watch4"},{"deviceCode":"17159","name":"Galaxy Watch4"},{"deviceCode":"17160","name":"Galaxy Watch4"},{"deviceCode":"17161","name":"Galaxy Watch4"},{"deviceCode":"17162","name":"Galaxy Watch4"},{"deviceCode":"17163","name":"Galaxy Watch4 Classic"},{"deviceCode":"17164","name":"Galaxy Watch4"},{"deviceCode":"17169","name":"Galaxy Watch5"},{"deviceCode":"17170","name":"Galaxy Watch5"},{"deviceCode":"17171","name":"Galaxy Watch5"},{"deviceCode":"17172","name":"Galaxy Watch5"},{"deviceCode":"17173","name":"Galaxy Watch5 Pro"},{"deviceCode":"17174","name":"Galaxy Watch5 Pro"},{"deviceCode":"17175","name":"Galaxy Watch5"},{"deviceCode":"17176","name":"Galaxy Watch5 Golf Edition"},{"deviceCode":"17177","name":"Galaxy Watch5 Golf Edition"},{"deviceCode":"17179","name":"Galaxy Watch6"},{"deviceCode":"17180","name":"Galaxy Watch6"},{"deviceCode":"17181","name":"Galaxy Watch6"},{"deviceCode":"17182","name":"Galaxy Watch6 Classic"},{"deviceCode":"17183","name":"Galaxy Watch6 Classic"},{"deviceCode":"17184","name":"Galaxy Watch6 Golf Edition"},{"deviceCode":"17185","name":"Galaxy Watch6 Classic"},{"deviceCode":"17187","name":"Galaxy Watch6 TB Edition"},{"deviceCode":"17188","name":"Galaxy Ring"},{"deviceCode":"17189","name":"Galaxy Ring"},{"deviceCode":"17190","name":"Galaxy Ring"},{"deviceCode":"17191","name":"Galaxy Ring"},{"deviceCode":"17192","name":"Galaxy Fit3"},{"deviceCode":"17193","name":"Galaxy Fit3"},{"deviceCode":"17194","name":"Galaxy Fit3"},{"deviceCode":"17197","name":"Galaxy Watch7"},{"deviceCode":"17198","name":"Galaxy Watch7"},{"deviceCode":"17199","name":"Galaxy Watch7"},{"deviceCode":"17201","name":"Galaxy Watch FE"},{"deviceCode":"17202","name":"Galaxy Watch FE"},{"deviceCode":"17203","name":"Galaxy Watch FE"},{"deviceCode":"17204","name":"Galaxy Watch Ultra"},{"deviceCode":"17205","name":"Galaxy Watch Ultra"},{"deviceCode":"17206","name":"Galaxy Watch Ultra"},{"deviceCode":"17207","name":"Galaxy Watch Ultra"},{"deviceCode":"17208","name":"Galaxy Watch8"},{"deviceCode":"17209","name":"Galaxy Watch8"},{"deviceCode":"17210","name":"Galaxy Watch8 Classic"},{"deviceCode":"17211","name":"Galaxy Watch8 Classic"},{"deviceCode":"17213","name":"Galaxy Watch9"},{"deviceCode":"17214","name":"Galaxy Watch9"},{"deviceCode":"17215","name":"Galaxy Watch9"},{"deviceCode":"17217","name":"Galaxy Watch Ultra2"},{"deviceCode":"17218","name":"Galaxy Watch Ultra2"}]},{"deviceGroup":21,"models":[{"deviceCode":"14336","name":"Galaxy Buds2"},{"deviceCode":"14337","name":"Galaxy Buds"},{"deviceCode":"14338","name":"Galaxy Buds3"},{"deviceCode":"14339","name":"Galaxy Buds2"},{"deviceCode":"14340","name":"Galaxy Buds2 Pro"},{"deviceCode":"14341","name":"Galaxy Buds4"},{"deviceCode":"14342","name":"Galaxy Buds On"},{"deviceCode":"257","name":"Galaxy Buds"},{"deviceCode":"258","name":"Galaxy Buds+"},{"deviceCode":"259","name":"Galaxy Buds+"},{"deviceCode":"260","name":"Galaxy Buds+"},{"deviceCode":"261","name":"Galaxy Buds+"},{"deviceCode":"262","name":"Galaxy Buds+"},{"deviceCode":"263","name":"Galaxy Buds+"},{"deviceCode":"264","name":"Galaxy Buds+"},{"deviceCode":"266","name":"Galaxy Buds+"},{"deviceCode":"278","name":"Galaxy Buds Live"},{"deviceCode":"279","name":"Galaxy Buds Live"},{"deviceCode":"280","name":"Galaxy Buds Live"},{"deviceCode":"281","name":"Galaxy Buds Live"},{"deviceCode":"282","name":"Galaxy Buds Live"},{"deviceCode":"283","name":"Galaxy Buds Live"},{"deviceCode":"284","name":"Galaxy Buds Live"},{"deviceCode":"298","name":"Galaxy Buds Pro"},{"deviceCode":"299","name":"Galaxy Buds Pro"},{"deviceCode":"300","name":"Galaxy Buds Pro"},{"deviceCode":"301","name":"Galaxy Buds 
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17152, name : Galaxy Watch4 Classic
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17153, name : Galaxy Watch4 Classic
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17154, name : Galaxy Watch4 Classic
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17155, name : Galaxy Watch4 Classic
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17156, name : Galaxy Watch4
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17157, name : Galaxy Watch4
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17158, name : Galaxy Watch4
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17159, name : Galaxy Watch4
+10-05 20:18:37.031 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17160, name : Galaxy Watch4
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17161, name : Galaxy Watch4
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17162, name : Galaxy Watch4
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17163, name : Galaxy Watch4 Classic
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17164, name : Galaxy Watch4
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17169, name : Galaxy Watch5
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17170, name : Galaxy Watch5
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17171, name : Galaxy Watch5
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17172, name : Galaxy Watch5
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17173, name : Galaxy Watch5 Pro
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17174, name : Galaxy Watch5 Pro
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17175, name : Galaxy Watch5
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17176, name : Galaxy Watch5 Golf Edition
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17177, name : Galaxy Watch5 Golf Edition
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17179, name : Galaxy Watch6
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17180, name : Galaxy Watch6
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17181, name : Galaxy Watch6
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17182, name : Galaxy Watch6 Classic
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17183, name : Galaxy Watch6 Classic
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17184, name : Galaxy Watch6 Golf Edition
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17185, name : Galaxy Watch6 Classic
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17187, name : Galaxy Watch6 TB Edition
+10-05 20:18:37.032 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17188, name : Galaxy Ring
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17189, name : Galaxy Ring
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17190, name : Galaxy Ring
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17191, name : Galaxy Ring
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17192, name : Galaxy Fit3
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17193, name : Galaxy Fit3
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17194, name : Galaxy Fit3
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17197, name : Galaxy Watch7
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17198, name : Galaxy Watch7
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17199, name : Galaxy Watch7
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17201, name : Galaxy Watch FE
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17202, name : Galaxy Watch FE
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17203, name : Galaxy Watch FE
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17204, name : Galaxy Watch Ultra
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17205, name : Galaxy Watch Ultra
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17206, name : Galaxy Watch Ultra
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17207, name : Galaxy Watch Ultra
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17208, name : Galaxy Watch8
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17209, name : Galaxy Watch8
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17210, name : Galaxy Watch8 Classic
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17211, name : Galaxy Watch8 Classic
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17213, name : Galaxy Watch9
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17214, name : Galaxy Watch9
+10-05 20:18:37.033 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17215, name : Galaxy Watch9
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17217, name : Galaxy Watch Ultra2
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 17218, name : Galaxy Watch Ultra2
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 14336, name : Galaxy Buds2
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 14337, name : Galaxy Buds
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 14338, name : Galaxy Buds3
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 14339, name : Galaxy Buds2
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 14340, name : Galaxy Buds2 Pro
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 14341, name : Galaxy Buds4
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 14342, name : Galaxy Buds On
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 257, name : Galaxy Buds
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 258, name : Galaxy Buds+
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 259, name : Galaxy Buds+
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 260, name : Galaxy Buds+
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 261, name : Galaxy Buds+
+10-05 20:18:37.034 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 262, name : Galaxy Buds+
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 263, name : Galaxy Buds+
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 264, name : Galaxy Buds+
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 266, name : Galaxy Buds+
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 278, name : Galaxy Buds Live
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 279, name : Galaxy Buds Live
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 280, name : Galaxy Buds Live
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 281, name : Galaxy Buds Live
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 282, name : Galaxy Buds Live
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 283, name : Galaxy Buds Live
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 284, name : Galaxy Buds Live
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 298, name : Galaxy Buds Pro
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 299, name : Galaxy Buds Pro
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 300, name : Galaxy Buds Pro
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 301, name : Galaxy Buds Pro
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 313, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 314, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 316, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 317, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 318, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 319, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 320, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 321, name : Galaxy Buds2
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 322, name : Galaxy Buds Core
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 323, name : Galaxy Buds Core
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 326, name : Galaxy Buds2 Pro
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 327, name : Galaxy Buds2 Pro
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 328, name : Galaxy Buds2 Pro
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 330, name : Galaxy Buds FE
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 331, name : Galaxy Buds FE
+10-05 20:18:37.035 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 333, name : Galaxy Buds3
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 334, name : Galaxy Buds3
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 340, name : Galaxy Buds3 Pro
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 341, name : Galaxy Buds3 Pro
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 347, name : Galaxy Buds3 FE
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 348, name : Galaxy Buds3 FE
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 355, name : Galaxy Buds4
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 356, name : Galaxy Buds4
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 359, name : Galaxy Buds4 Pro
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 360, name : Galaxy Buds4 Pro
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 361, name : Galaxy Buds4 Pro
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): parseRes():deviceCode : 363, name : Galaxy Buds On
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): updatePreviousTime() starts...com.samsung.android.app.twatchmanager.TWatchManagerApplication@e86a279
+10-05 20:18:37.036 I/tUHM:DeviceNameManager( 6801): updatePreviousTime() update previous refresh device name info time : 2026-10-05 20:18:37
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW] handleUpdateCheckResult-result..
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [Print XML result for StubAPI]====================================
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** signature : [null]
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** resultCode : 1
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** downloadURI : [null]
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** cacheInfo : R-E4267935-8E2FE8DE-261005125240.877
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** versionName : 2.2.70.26060861
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** versionCode : 2126060861
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** productName : Galaxy Wearable NSS
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** resultMsg : Not necessary to update
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** timeInfo : 260722054138.260722055911.260812080723.260812082928-261005131837.1791206317514
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** updateDescription : 
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** appId : com.samsung.android.app.watchmanager
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** contentSize : 15042601
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): [GW]** serverType : PRD
+10-05 20:18:37.282 I/tUHM:UpdateCheckTask( 6801): ==================================================================
+10-05 20:18:37.295 I/tUHM:[Update]UpdateUtil( 6801): getPD()
+10-05 20:18:37.299 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:37.299 I/tUHM:[Update]UpdateUtil( 6801): isGWQATestMode-isGWQATestMode : false
+10-05 20:18:37.300 I/tUHM:PlatformUtils( 6801): folderExistsInPath(): result : false
+10-05 20:18:37.300 I/tUHM:[Update]UpdateUtil( 6801): isUTTestMode-isTestModeOn : false
+10-05 20:18:37.302 I/tUHM:RegistryAppsDBManager( 6801): updateAppUpdateCancelCount-updatedCount : 0
+10-05 20:18:37.302 I/tUHM:[Update]UpdateManager( 6801): [GW] handleUpdateCheckResult-Update Available for packages 0 totalContentSize : 0
+10-05 20:18:37.303 I/tUHM:[Update]UpdateUtil( 6801): clearUpdateCheckPref() starts...
+10-05 20:18:37.303 I/tUHM:[Update]LoadingFragment( 6801): onUpdateUnAvailable-starts...
+10-05 20:18:37.303 I/tUHM:SetupWizardWelcomeActivity( 6801): [GW] onUpdateProcessFinished() starts... isSuccess : false purpose : INITIAL_LAUNCH_SCENARIO
+10-05 20:18:37.303 I/tUHM:SetupWizardWelcomeActivity( 6801): onUpdateProcessFinished-launchMode from intent ? : -1
+10-05 20:18:37.303 I/tUHM:SetupWizardWelcomeActivity( 6801): setLaunchModeAfterUpdateProcess-set launchMode to ...1001
+10-05 20:18:37.303 I/tUHM:SetupWizardWelcomeActivity( 6801): launchPluginProcess-wearableDevice : null
+10-05 20:18:37.304 I/tUHM:FragmentUpdater( 6801): updateFragment-fragmentName:WelcomeFragment bundle:Bundle[{}], option:replace : true add : false pop : false force : true
+10-05 20:18:37.304 I/tUHM:FragmentUpdater( 6801): isActivityDestroyed-will return ? false
+10-05 20:18:37.304 E/tUHM:FragmentUpdater( 6801): updateFragment-current fragment LoadingFragment, result ? false
+10-05 20:18:37.304 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-current state : RESUMED
+10-05 20:18:37.304 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-replace fragment ...
+10-05 20:18:37.305 D/FragmentManager( 6801): androidx.fragment.app.m1@6b65bae put WelcomeFragment{dc25364} (a35196b6-2205-44c8-829f-b8cf1cca6744 id=0x7f0800cf tag=tUHMFragment) to Active Fragments, mActive size: 2
+10-05 20:18:37.305 I/tUHM:[Update]LoadingFragment( 6801): onPause-starts...
+10-05 20:18:37.308 I/tUHM:WelcomeFragment( 6801): onCreate-starts...
+10-05 20:18:37.308 I/tUHM:WelcomeFragment( 6801): checkSmartSwitchCase() fromSmartSwitchType = -1
+10-05 20:18:37.309 I/tUHM:ViewOrientationAdjuster( 6801): init-forcePortraitMode : true orientation : Portrait multiWindow : false width : 394 height : 853 screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:37.332 I/tUHM:ViewOrientationAdjuster( 6801): setupScrollPadding-normal case : 96.0
+10-05 20:18:37.333 I/tUHM:BottomButtonLayout( 6801): updateButtonLayout-bothVisible : true screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:37.333 I/tUHM:OrientationBaseFragment( 6801): initScrollView-isPortrait : true leftFrameScrollView : com.samsung.android.app.watchmanager.ui.FadingEdgeNestedScrollView{dc18553 VFED..... ......I. 0,0-0,0 #7f0801a6 app:id/left_frame_scroll}
+10-05 20:18:37.333 I/tUHM:WelcomeFragment( 6801): initView-starts...
+10-05 20:18:37.333 I/tUHM:PlatformUtils( 6801): getCountryISO2():tel.getNetworkCountryIso() = vn
+10-05 20:18:37.335 I/tUHM:PlatformUtils( 6801): getCountryISO2():tel.getNetworkCountryIso() = vn
+10-05 20:18:37.335 I/tUHM:BottomButtonLayout( 6801): setButtonVisibility-starts...
+10-05 20:18:37.335 I/tUHM:BottomButtonLayout( 6801): updateButtonLayout-bothVisible : false screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:37.335 I/tUHM:WelcomeDevicePageModel( 6801): initModel-WELCOME_WATCH will be set to default setting
+10-05 20:18:37.341 I/tUHM:WelcomeDevicePageModel( 6801): initModel-WELCOME_BUDS will be set to default setting
+10-05 20:18:37.345 I/tUHM:WelcomeDevicePageModel( 6801): initModel-WELCOME_FIT will be set to default setting
+10-05 20:18:37.349 I/tUHM:WelcomeDevicePageModel( 6801): initModel-WELCOME_RING will be set to default setting
+10-05 20:18:37.355 I/tUHM:WelcomeFragment( 6801): initViewPager-item count : 4
+10-05 20:18:37.356 I/tUHM:HostManagerUtilsDBOperations( 6801): getSettingsDBValueString-key : buds_db_info_removed result : null(default : false)
+10-05 20:18:37.356 I/tUHM:BudsControlMover( 6801): isBudsDataRemoved-removed ? false
+10-05 20:18:37.358 I/tUHM:BudsControlMover( 6801): validateLaunchBudsTipsGuide-packageExists : false, permissionGranted : false
+10-05 20:18:37.358 I/tUHM:ScspResourceScheduler( 6801): checkTimeToWork-starts... cloud mode on?(true)
+10-05 20:18:37.358 W/tUHM:ScspRequestTimeChecker( 6801): getPreviousScspDownloadCheckTime - time : SCSP_RESOURCE_TIME / Text '' could not be parsed at index 0 
+10-05 20:18:37.358 I/tUHM:ScspRequestTimeChecker( 6801): checkTimeInterval-result : true
+10-05 20:18:37.358 I/tUHM:ScspRequestTimeChecker( 6801): setPreviousScspDownloadCheckTime-set SCSP_RESOURCE_TIME current time : 2026-10-05 20:18:37
+10-05 20:18:37.358 I/tUHM:WelcomeFragment( 6801): onStart
+10-05 20:18:37.358 I/tUHM:ScspHelper( 6801): downloadWelcomeModelImage-starts ... dagger.hilt.android.internal.managers.n@e1c569f
+10-05 20:18:37.358 D/FragmentManager( 6801): androidx.fragment.app.m1@6b65baeput null to Active Fragments, mActive size: 2, fragment: LoadingFragment{2283d4f} (fd1940c4-26c1-4961-aa5a-3efa678ee667 id=0x7f0800cf tag=tUHMFragment)
+10-05 20:18:37.359 I/tUHM:[Update]LoadingFragment( 6801): onDestroy-starts...
+10-05 20:18:37.359 I/tUHM:WelcomeFragment( 6801): onResume
+10-05 20:18:37.359 I/tUHM:FragmentUpdater( 6801): executeTransaction-executed ...
+10-05 20:18:37.371 I/tUHM:FadingEdgeNestedScrollView( 6801): init-navigationBarHeight : 0, bottomButtonHeight : 299
+10-05 20:18:37.371 I/tUHM:FadingEdgeNestedScrollView( 6801): init-navigationBarHeight : 0, bottomButtonHeight : 299
+10-05 20:18:37.371 I/tUHM:BottomButtonLayout( 6801): setOnApplyWindowInsetsListener-systembars : Insets{left=0, top=152, right=0, bottom=0}
+10-05 20:18:37.374 I/tUHM:WelcomeFragment( 6801): onGlobalLayout-scrollable ? false
+10-05 20:18:37.375 I/tUHM:PlatformUtils( 6801): getCountryISO2():tel.getNetworkCountryIso() = vn
+10-05 20:18:37.755 I/tUHM:ScspHelper( 6801): gerResourceList-result : status : ***[200]*** id : wV2HPDBCGv cid : cmP5tpeaG2 requestAfter : 24 etag : "ZTI6OmNtUDV0cGVhRzI6OjE3ODQ3NjgxMDY1ODA6OjIwMTQ3NDc3MzY4NTAwMDA5NTc"
+10-05 20:18:37.928 I/tUHM:ScspHelper( 6801): [GW] downloadConfiguration-result : status : ***[200]*** id : 72caaAegGK cid : 72caaAegGK requestAfter : 24 etag : "YzM6OjcyY2FhQWVnR0skJDE3MjExOTA0MTcwMjU"
+10-05 20:18:37.928 I/tUHM:ScspHelper( 6801): [GW] downloadConfiguration-file downloaded actually, revision : 1
+10-05 20:18:37.929 I/tUHM:ScspHelper( 6801): downloadConfiguration-downloadConfiguration ends ...
+10-05 20:18:38.526 I/tUHM:ScspResourceDatabase( 6801): onCreate-called
+10-05 20:18:38.528 I/tUHM:ScspResourceDatabase( 6801): onOpen-called
+10-05 20:18:38.529 I/tUHM:ScspHelper( 6801): saveDownloadFileInfo-insert ? null
+10-05 20:18:38.531 I/tUHM:ScspHelper( 6801): downloadInternal-download result : true info : name : welcome_watch_dark ext : webp size : 57070 rev : 1 endDate : 0
+10-05 20:18:40.317 I/tUHM:SALogUtil( 6801): screenID = 510 / eventID = 5122 / eventName = Start the Journey
+10-05 20:18:40.318 I/tUHM:PermissionFragment( 6801): verifyPermissions starts, activity [com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285], task [a1.j@f562083], permissions [[android.permission.BLUETOOTH_SCAN, android.permission.BLUETOOTH_CONNECT, android.permission.NEARBY_WIFI_DEVICES, android.permission.READ_PHONE_STATE, android.permission.READ_PHONE_NUMBERS]] showIntro : [false]
+10-05 20:18:40.319 I/tUHM:PermissionFragment( 6801): [GW] verifyPermissionsInternal-permission [android.permission.BLUETOOTH_SCAN] is not granted
+10-05 20:18:40.319 I/tUHM:PermissionFragment( 6801): [GW] verifyPermissionsInternal-permission [android.permission.BLUETOOTH_CONNECT] is not granted
+10-05 20:18:40.320 I/tUHM:PermissionFragment( 6801): [GW] verifyPermissionsInternal-permission [android.permission.NEARBY_WIFI_DEVICES] is not granted
+10-05 20:18:40.321 I/tUHM:PermissionFragment( 6801): [GW] verifyPermissionsInternal-permission [android.permission.READ_PHONE_STATE] is not granted
+10-05 20:18:40.321 I/tUHM:PermissionFragment( 6801): [GW] verifyPermissionsInternal-permission [android.permission.READ_PHONE_NUMBERS] is not granted
+10-05 20:18:40.325 I/tUHM:PermissionFragment( 6801): onAttach()
+10-05 20:18:40.325 I/tUHM:PermissionFragment( 6801): onCreate, activity [com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285], task [a1.j@f562083], permissions [[android.permission.BLUETOOTH_SCAN, android.permission.BLUETOOTH_CONNECT, android.permission.NEARBY_WIFI_DEVICES, android.permission.READ_PHONE_STATE, android.permission.READ_PHONE_NUMBERS]]
+10-05 20:18:40.325 I/tUHM:PermissionFragment( 6801): onCreate() mHideNavigation : false
+10-05 20:18:40.327 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN
+10-05 20:18:40.327 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN return:5001
+10-05 20:18:40.329 I/tUHM:PermissionUtils( 6801): isNeverShowEnabled()  requestCodeUniqueIdentifier:5001 result:false
+10-05 20:18:40.329 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT
+10-05 20:18:40.329 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT return:5002
+10-05 20:18:40.329 I/tUHM:PermissionUtils( 6801): isNeverShowEnabled()  requestCodeUniqueIdentifier:5002 result:false
+10-05 20:18:40.331 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES
+10-05 20:18:40.331 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES return:5004
+10-05 20:18:40.331 I/tUHM:PermissionUtils( 6801): isNeverShowEnabled()  requestCodeUniqueIdentifier:5004 result:false
+10-05 20:18:40.331 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE
+10-05 20:18:40.331 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE return:5005
+10-05 20:18:40.331 I/tUHM:PermissionUtils( 6801): isNeverShowEnabled()  requestCodeUniqueIdentifier:5005 result:false
+10-05 20:18:40.332 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS
+10-05 20:18:40.332 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS return:5007
+10-05 20:18:40.332 I/tUHM:PermissionUtils( 6801): isNeverShowEnabled()  requestCodeUniqueIdentifier:5007 result:false
+10-05 20:18:40.332 I/tUHM:PermissionFragment( 6801): requestPermission() settingsPermissions:null
+10-05 20:18:40.333 I/tUHM:PermissionFragment( 6801): requestPermission() normalPermissions:[android.permission.BLUETOOTH_SCAN, android.permission.BLUETOOTH_CONNECT, android.permission.NEARBY_WIFI_DEVICES, android.permission.READ_PHONE_STATE, android.permission.READ_PHONE_NUMBERS]
+10-05 20:18:40.355 I/tUHM:PermissionFragment( 6801): onCreateView
+10-05 20:18:40.358 I/tUHM:SetupWizardWelcomeActivity( 6801): onPause-called..
+10-05 20:18:40.358 I/tUHM:WelcomeFragment( 6801): onPause
+10-05 20:18:40.358 I/tUHM:SetupWizardWelcomeActivity( 6801): onPause-starts...
+10-05 20:18:40.389 I/tUHM:ScspHelper( 6801): saveDownloadFileInfo-insert ? null
+10-05 20:18:40.390 I/tUHM:ScspHelper( 6801): downloadInternal-download result : true info : name : welcome_watch ext : webp size : 57070 rev : 1 endDate : 0
+10-05 20:18:43.570 I/tUHM:PermissionFragment( 6801): onRequestPermissionsResult() mHideNavigation : false
+10-05 20:18:43.570 I/tUHM:NearbyDevicePermissionNotiHelper( 6801): isNeedToShow() context : com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285
+10-05 20:18:43.575 I/tUHM:NearbyDevicePermissionNotiHelper( 6801): isNeedToShow() there is no plugin, remove notification if it is shown
+10-05 20:18:43.577 I/tUHM:NearbyDevicePermissionNotiHelper( 6801): isNeedToShow() result : false
+10-05 20:18:43.577 I/tUHM:PermissionFragment( 6801): [GW] onRequestPermissionsResult() permission:android.permission.BLUETOOTH_SCAN grant value:0
+10-05 20:18:43.577 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN
+10-05 20:18:43.577 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN return:5001
+10-05 20:18:43.577 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5001 value:false
+10-05 20:18:43.577 I/tUHM:PermissionFragment( 6801): [GW] onRequestPermissionsResult() permission:android.permission.BLUETOOTH_CONNECT grant value:0
+10-05 20:18:43.577 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT
+10-05 20:18:43.577 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT return:5002
+10-05 20:18:43.577 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5002 value:false
+10-05 20:18:43.577 I/tUHM:PermissionFragment( 6801): [GW] onRequestPermissionsResult() permission:android.permission.NEARBY_WIFI_DEVICES grant value:0
+10-05 20:18:43.577 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES return:5004
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5004 value:false
+10-05 20:18:43.578 I/tUHM:PermissionFragment( 6801): [GW] onRequestPermissionsResult() permission:android.permission.READ_PHONE_STATE grant value:0
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE return:5005
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5005 value:false
+10-05 20:18:43.578 I/tUHM:PermissionFragment( 6801): [GW] onRequestPermissionsResult() permission:android.permission.READ_PHONE_NUMBERS grant value:0
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS return:5007
+10-05 20:18:43.578 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5007 value:false
+10-05 20:18:43.580 I/tUHM:BluetoothUUIDUtil( 6801): registerUUIDLanguage - 656E5F5553
+10-05 20:18:43.580 I/tUHM:BluetoothUUIDUtil( 6801): registerUUIDLanguage - 0075ab21-4a48-4b42-4841-00656e5f5553
+10-05 20:18:43.598 I/tUHM:BluetoothUUIDUtil( 6801): registerUUIDLanguage - create : ServerSocket: Type: TYPE_RFCOMM Channel: -1
+10-05 20:18:43.598 I/tUHM:FragmentUpdater( 6801): updateFragment-fragmentName:DeviceListFragment bundle:Bundle[{}], option:replace : true add : false pop : false force : true
+10-05 20:18:43.599 I/tUHM:FragmentUpdater( 6801): isActivityDestroyed-will return ? false
+10-05 20:18:43.600 E/tUHM:FragmentUpdater( 6801): updateFragment-current fragment PermissionFragment, result ? false
+10-05 20:18:43.600 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-current state : STARTED
+10-05 20:18:43.600 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-can't perform transaction right now
+10-05 20:18:43.600 I/tUHM:PermissionFragment( 6801): finishFragment, mActivity [com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285]
+10-05 20:18:43.602 I/tUHM:PermissionFragment( 6801): onDestroy
+10-05 20:18:43.602 I/tUHM:SetupWizardWelcomeActivity( 6801): onResume-starts...
+10-05 20:18:43.602 I/tUHM:RemoveTaskChecker( 6801): isRunning-isRunning ? false
+10-05 20:18:43.603 I/tUHM:WelcomeFragment( 6801): onResume
+10-05 20:18:43.603 I/tUHM:FragmentUpdater( 6801): onResume-has pending transaction ? e7.a@4b8b4db
+10-05 20:18:43.603 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-replace fragment ...
+10-05 20:18:43.604 D/FragmentManager( 6801): androidx.fragment.app.m1@6b65bae put DeviceListFragment{9000251} (b1ae1a66-2fb4-4103-8948-f2a9c03a554b id=0x7f0800cf tag=tUHMFragment) to Active Fragments, mActive size: 2
+10-05 20:18:43.604 I/tUHM:WelcomeFragment( 6801): onPause
+10-05 20:18:43.604 I/tUHM:WelcomeFragment( 6801): onStop
+10-05 20:18:43.605 I/tUHM:DeviceListFragment( 6801): onCreate-starts...
+10-05 20:18:43.605 I/tUHM:ViewOrientationAdjuster( 6801): init-forcePortraitMode : false orientation : Portrait multiWindow : false width : 394 height : 853 screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:43.631 I/tUHM:ViewOrientationAdjuster( 6801): setupScrollPadding-normal case : 38.0
+10-05 20:18:43.631 I/tUHM:BottomButtonLayout( 6801): updateButtonLayout-bothVisible : true screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:43.631 I/tUHM:OrientationBaseFragment( 6801): initScrollView-isPortrait : true leftFrameScrollView : com.samsung.android.app.watchmanager.ui.FadingEdgeNestedScrollView{8ebd038 VFED..... ......I. 0,0-0,0 #7f0801a6 app:id/left_frame_scroll}
+10-05 20:18:43.631 I/tUHM:DeviceListFragment( 6801): onViewCreated-starts...
+10-05 20:18:43.632 I/tUHM:BottomButtonLayout( 6801): setButtonVisibility-starts...
+10-05 20:18:43.632 I/tUHM:BottomButtonLayout( 6801): updateButtonLayout-bothVisible : false screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:43.632 I/tUHM:DeviceListFragment( 6801): initToolbar-marginStart : -104 marginEnd : -104
+10-05 20:18:43.637 I/tUHM:PermissionFragment( 6801): verifyPermissions starts, activity [com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285], task [com.samsung.android.app.watchmanager.setupwizard.searching.c@f668abd], permissions [[android.permission.BLUETOOTH_SCAN, android.permission.BLUETOOTH_CONNECT, android.permission.NEARBY_WIFI_DEVICES, android.permission.READ_PHONE_STATE, android.permission.READ_PHONE_NUMBERS]] showIntro : [false]
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN return:5001
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5001 value:false
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT return:5002
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5002 value:false
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES return:5004
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5004 value:false
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE return:5005
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5005 value:false
+10-05 20:18:43.637 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS
+10-05 20:18:43.638 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS return:5007
+10-05 20:18:43.638 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5007 value:false
+10-05 20:18:43.638 I/tUHM:DeviceListFragment( 6801): doTask-starts.. permissionsGranted : true
+10-05 20:18:43.638 I/tUHM:DeviceListFragment( 6801): baseInit-starts ... isBTEnabled : true
+10-05 20:18:43.638 I/tUHM:DeviceListFragment( 6801): baseInitInternal-starts ... basInitCalledOnce : false
+10-05 20:18:43.638 I/tUHM:DeviceListFragment( 6801): createDeviceListView-starts...
+10-05 20:18:43.638 I/tUHM:DeviceListHelper( 6801): refreshStoredDevice()
+10-05 20:18:43.640 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:Amazfit GTS 4 address:##:##:##:##:AE:AE
+10-05 20:18:43.641 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.643 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : Amazfit GTS 4
+10-05 20:18:43.644 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.644 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.645 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.645 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.646 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:tiohmaxzingendihos address:##:##:##:##:0C:7E
+10-05 20:18:43.646 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.648 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : tiohmaxzingendihos
+10-05 20:18:43.649 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.650 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.650 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.651 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:thomas-surfacepro7 address:##:##:##:##:DF:41
+10-05 20:18:43.651 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.653 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : thomas-surfacepro7
+10-05 20:18:43.654 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.655 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.655 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.656 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:[AV] Samsung Soundbar K350 K-Series address:##:##:##:##:67:C5
+10-05 20:18:43.656 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.658 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : [AV] Samsung Soundbar K350 K-Series
+10-05 20:18:43.659 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.660 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.660 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.660 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:Space Travel 2 address:##:##:##:##:7D:70
+10-05 20:18:43.661 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.663 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : Space Travel 2
+10-05 20:18:43.663 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.664 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.664 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.665 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:NMC0808 address:##:##:##:##:A5:B3
+10-05 20:18:43.665 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.667 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : NMC0808
+10-05 20:18:43.668 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.670 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.670 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.670 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:Ford Everest address:##:##:##:##:F1:D4
+10-05 20:18:43.670 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.678 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : Ford Everest
+10-05 20:18:43.678 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.680 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.680 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.682 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:Tiohmaxz's Buds 3 address:##:##:##:##:6A:04
+10-05 20:18:43.682 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.684 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : Tiohmaxz's Buds 3
+10-05 20:18:43.685 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - TRUE
+10-05 20:18:43.686 E/tUHM:DeviceManager( 6801): getWearableDeviceFromBudsUUID-0154
+10-05 20:18:43.688 I/tUHM:DeviceNameManager( 6801): getDeviceName():deviceCode = 340, name = Galaxy Buds3 Pro
+10-05 20:18:43.688 I/tUHM:WearableDevice( 6801): updateCategoryName-from id : Galaxy Buds3 Pro
+10-05 20:18:43.689 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - TRUE
+10-05 20:18:43.689 I/tUHM:BluetoothUUIDUtil( 6801): isHandsFreeModel - TRUE
+10-05 20:18:43.690 W/tUHM:WearableDevice( 6801): isSupportedOSVersion-minSdkVersion: 29 maxSdkVersion : 1000current sdk version : 36
+10-05 20:18:43.690 I/tUHM:DeviceListHelper( 6801): addPairedDevice-[paired] add device
+10-05 20:18:43.691 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:LAWEE BOOM X2 address:##:##:##:##:CB:69
+10-05 20:18:43.691 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.693 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : LAWEE BOOM X2
+10-05 20:18:43.694 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.695 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.695 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.697 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:SOUNDPEATS T3 Pro address:##:##:##:##:50:5D
+10-05 20:18:43.697 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.700 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : SOUNDPEATS T3 Pro
+10-05 20:18:43.701 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.702 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.702 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.702 W/tUHM:DeviceListHelper( 6801): addPairedDevice-name:IMOSS address:##:##:##:##:05:9B
+10-05 20:18:43.702 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.705 I/tUHM:WearableDevice( 6801): updateCategoryName-from name : IMOSS
+10-05 20:18:43.706 I/tUHM:BluetoothUUIDUtil( 6801): isBudsModel - FALSE
+10-05 20:18:43.707 I/tUHM:BluetoothUUIDUtil( 6801): isLeAudioModel - FALSE
+10-05 20:18:43.707 I/tUHM:DeviceListHelper( 6801): addPairedDevice-ignore case
+10-05 20:18:43.707 I/tUHM:DeviceListHelper( 6801): refreshStoredDevice-paired device WearableDevice{name=Tiohmaxz's Buds 3, category=Galaxy Buds3 Pro, address=##:##:##:##:6A:04, isBonded=true, bluetoothClass=244404, setupMode=false, restored=false, type=3, device id=0154(0340), mode= DEFAULT, osVersion= 0, caller= , fixedName= Tiohmaxz's Buds 3, aliasName= Tiohmaxz's Buds 3, rule= WearableDeviceRule{packageName=com.samsung.accessory.paranmgr/mainDeviceName=Galaxy Buds3 Pro, minSdk=29/maxSdk=1000/minGMS=-1, wearableDetailType=BUDS}
+10-05 20:18:43.707 I/tUHM:DeviceListFragment( 6801): doCreateDeviceListView-starts ... paired devices ? 1
+10-05 20:18:43.707 I/tUHM:PermissionFragment( 6801): verifyPermissions starts, activity [com.samsung.android.app.watchmanager.setupwizard.SetupWizardWelcomeActivity@976c285], task [com.samsung.android.app.watchmanager.setupwizard.searching.c@2ca5fac], permissions [[android.permission.BLUETOOTH_SCAN, android.permission.BLUETOOTH_CONNECT, android.permission.NEARBY_WIFI_DEVICES, android.permission.READ_PHONE_STATE, android.permission.READ_PHONE_NUMBERS]] showIntro : [false]
+10-05 20:18:43.707 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN
+10-05 20:18:43.707 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_SCAN return:5001
+10-05 20:18:43.707 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5001 value:false
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.BLUETOOTH_CONNECT return:5002
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5002 value:false
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.NEARBY_WIFI_DEVICES return:5004
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5004 value:false
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_STATE return:5005
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5005 value:false
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): getRequestCode() permission:android.permission.READ_PHONE_NUMBERS return:5007
+10-05 20:18:43.708 I/tUHM:PermissionUtils( 6801): setNeverShow() requestCodeUniqueIdentifier:5007 value:false
+10-05 20:18:43.708 I/tUHM:DeviceListFragment( 6801): mLaunchPluginTask :: allPermissionGranted
+10-05 20:18:43.708 I/tUHM:FeatureUtil( 6801): semAvailable = false
+10-05 20:18:43.709 I/tUHM:DiscoveryManager( 6801): DiscoveryManager : mode is DEVICE_LIST_DEVICE_ID
+10-05 20:18:43.709 I/tUHM:DiscoveryManager( 6801): setDiscoveryMode : DEVICE_LIST_DEVICE_ID
+10-05 20:18:43.709 I/tUHM:DiscoveryManager( 6801): setDiscoveryMode : DEVICE_LIST_DEVICE_ID
+10-05 20:18:43.709 I/tUHM:BluetoothLEScanner( 6801): terminate
+10-05 20:18:43.709 I/tUHM:BluetoothLEScanner( 6801): stopDiscovery
+10-05 20:18:43.710 I/tUHM:DiscoveryManager( 6801): createTimeout
+10-05 20:18:43.710 I/tUHM:DiscoveryManager( 6801): createTimeout-set to default
+10-05 20:18:43.710 I/tUHM:DiscoveryManager( 6801): startDiscovery : do it!!
+10-05 20:18:43.710 I/tUHM:BluetoothLEScanner( 6801): startDiscovery
+10-05 20:18:43.710 I/tUHM:BluetoothLEScanner( 6801): getScanSetting : SCAN_MODE_LOW_LATENCY
+10-05 20:18:43.720 I/tUHM:InlineCueAreaView( 6801): isInlineCueAvailable-Non samsung device is not supported. SKIP
+10-05 20:18:43.720 I/tUHM:InlineCueAreaView( 6801): initRecyclerView
+10-05 20:18:43.720 D/FragmentManager( 6801): androidx.fragment.app.m1@6b65baeput null to Active Fragments, mActive size: 2, fragment: WelcomeFragment{dc25364} (a35196b6-2205-44c8-829f-b8cf1cca6744 id=0x7f0800cf tag=tUHMFragment)
+10-05 20:18:43.721 I/tUHM:WelcomeFragment( 6801): onDestroyView-starts...
+10-05 20:18:43.722 I/tUHM:DeviceListFragment( 6801): onResume-starts...
+10-05 20:18:43.722 I/tUHM:FragmentUpdater( 6801): executeTransaction-executed ...
+10-05 20:18:43.729 I/tUHM:PlatformUtils( 6801): getCountryISO2():tel.getNetworkCountryIso() = vn
+10-05 20:18:43.741 I/tUHM:FadingEdgeNestedScrollView( 6801): init-navigationBarHeight : 0, bottomButtonHeight : 299
+10-05 20:18:43.741 I/tUHM:FadingEdgeNestedScrollView( 6801): init-navigationBarHeight : 0, bottomButtonHeight : 299
+10-05 20:18:43.741 I/tUHM:BottomButtonLayout( 6801): setOnApplyWindowInsetsListener-systembars : Insets{left=0, top=152, right=0, bottom=0}
+10-05 20:18:43.848 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:43.849 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:43.851 I/tUHM:DiscoveryManager( 6801): onDeviceFound : Galaxy Watch7 (A4QL)
+10-05 20:18:43.852 W/tUHM:DiscoveryManager( 6801): onDeviceFoundForDeviceIdFromBLEScan() : Galaxy Watch7 (A4QL)
+10-05 20:18:43.854 I/tUHM:DeviceManager( 6801): getWearableDeviceFromWatchFormat-WearOS
+10-05 20:18:43.858 I/tUHM:DeviceNameManager( 6801): getDeviceName():deviceCode = 17197, name = Galaxy Watch7
+10-05 20:18:43.858 I/tUHM:WearableDevice( 6801): updateCategoryName-from id : Galaxy Watch7
+10-05 20:18:43.858 I/tUHM:DiscoveryManager( 6801): notifyDeviceFound : DEVICE_LIST_DEVICE_ID - Galaxy Watch7 (A4QL)
+10-05 20:18:43.858 I/tUHM:DeviceListFragment( 6801): onDeviceFound-DEVICE_LIST_DEVICE_ID - WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= , fixedName= Galaxy Watch7 (A4QL), aliasName= null, rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH}
+10-05 20:18:43.858 W/tUHM:WearableDevice( 6801): isSupportedOSVersion-minSdkVersion: 30 maxSdkVersion : 1000current sdk version : 36
+10-05 20:18:43.859 I/tUHM:DeviceListFragment( 6801): checkWearOSWatchAddressChange-acModeWearOSWatch : false
+10-05 20:18:43.860 I/tUHM:DeviceListFragment( 6801): onDeviceFound-will be added (Galaxy Watch7 (A4QL)/Galaxy Watch7/##:##:##:##:45:DA)
+10-05 20:18:43.987 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:43.987 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:43.989 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:44.123 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:44.124 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:44.125 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:44.263 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:44.265 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:44.266 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:44.401 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:44.402 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:44.403 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:44.824 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:44.826 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:44.828 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:44.947 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:44.950 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:44.954 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:45.085 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:45.088 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:45.091 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:45.223 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:45.225 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:45.229 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:45.508 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:45.511 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:45.516 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:45.778 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:45.780 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:45.786 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:45.901 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:45.903 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:45.906 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:46.040 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:46.043 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:46.046 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:46.305 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:46.306 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:46.307 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:46.434 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:46.435 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:46.437 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:46.570 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:46.573 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:46.583 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:46.708 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:46.712 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:46.714 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:47.406 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:47.409 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:47.414 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:47.534 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:47.538 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:47.542 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:47.666 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:47.669 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:47.672 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:47.805 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:47.808 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:47.811 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:47.949 I/tUHM:ManufacturerUtil( 6801): getManufacturerDataFromScanResult - XX:XX:XX:XX:45:DA , size : 1
+10-05 20:18:47.951 I/tUHM:BluetoothLEScanner( 6801): onScanResult : XX:XX:XX:XX:45:DA/Galaxy Watch7 (A4QL) len - 13
+10-05 20:18:47.956 I/tUHM:DiscoveryManager( 6801): onDeviceFound : DEVICE_LIST_DEVICE_ID - ignore Galaxy Watch7 (A4QL) | ##:##:##:##:45:DA
+10-05 20:18:47.990 I/tUHM:DeviceListItemAdapter( 6801): ItemViewHolder.onClick- clicked position : 0
+10-05 20:18:47.990 I/tUHM:DeviceListFragment( 6801): onItemSelected-progressBar : com.samsung.android.app.watchmanager.ui.progress.CompatProgressBar{e1c882e G.E...... ...P..I. 0,0-0,0 #7f080273 app:id/progress_circle} selected : WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= , fixedName= Galaxy Watch7 (A4QL), aliasName= Galaxy Watch7 (A4QL), rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH}
+10-05 20:18:47.991 I/tUHM:DeviceListFragment( 6801): stopConnectUI-scanned device count : 2
+10-05 20:18:47.994 I/tUHM:AnimationHelper( 6801): ANIM::startTitleAnimation()::start
+10-05 20:18:47.995 I/tUHM:BottomButtonLayout( 6801): setButtonVisibility-starts...
+10-05 20:18:47.996 I/tUHM:BottomButtonLayout( 6801): updateButtonLayout-bothVisible : true screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:47.996 I/tUHM:DiscoveryManager( 6801): stopDiscovery
+10-05 20:18:47.996 I/tUHM:DiscoveryManager( 6801): removeTimeout
+10-05 20:18:47.996 I/tUHM:BluetoothLEScanner( 6801): terminate
+10-05 20:18:47.996 I/tUHM:BluetoothLEScanner( 6801): stopDiscovery
+10-05 20:18:48.001 I/tUHM:DiscoveryManager( 6801): unregisterReceiver
+10-05 20:18:48.001 I/tUHM:DeviceListFragment( 6801): doItemClickProcess-selected : WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= , fixedName= Galaxy Watch7 (A4QL), aliasName= Galaxy Watch7 (A4QL), rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH} finalWearableDevice : WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= , fixedName= Galaxy Watch7 (A4QL), aliasName= Galaxy Watch7 (A4QL), rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH}
+10-05 20:18:48.002 I/tUHM:EntryPointHelper( 6801): [GW] setDeviceFromOnClick-WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= , fixedName= Galaxy Watch7 (A4QL), aliasName= Galaxy Watch7 (A4QL), rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH}
+10-05 20:18:48.002 I/tUHM:DeviceListFragment( 6801): connect-selectedWearableDevice : WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= com.samsung.android.app.watchmanager, fixedName= Galaxy Watch7 (A4QL), aliasName= Galaxy Watch7 (A4QL), rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH}
+10-05 20:18:48.002 I/tUHM:WearableDeviceController( 6801): [GW] processPairingWithLEScan-starts ...WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= com.samsung.android.app.watchmanager, fixedName= Galaxy Watch7 (A4QL), aliasName= Galaxy Watch7 (A4QL), rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH}
+10-05 20:18:48.002 I/tUHM:WearableDeviceController( 6801): [GW] processPairing-starts ... WearableDevice{name=Galaxy Watch7 (A4QL), category=Galaxy Watch7, address=##:##:##:##:45:DA, isBonded=false, bluetoothClass=704, setupMode=true, restored=false, type=3, device id=432d(17197), mode= SETUP_MODE, osVersion= 36, caller= com.samsung.android.app.watchmanager, fixedName= Galaxy Watch7 (A4QL), aliasName= Galaxy Watch7 (A4QL), rule= WearableDeviceRule{packageName=com.samsung.wearable.watch7plugin/mainDeviceName=Galaxy Watch7, minSdk=30/maxSdk=1000/minGMS=241017000, wearableDetailType=WEAR_OS_WATCH}
+10-05 20:18:48.002 I/tUHM:WearableDeviceController( 6801): [GW] processPairing-move pairing fragment
+10-05 20:18:48.003 I/tUHM:SetupWizardWelcomeActivity( 6801):  setLaunchMode- set to ...1003, result ? 1003 
+10-05 20:18:48.003 I/tUHM:WearableDeviceController( 6801): [GW] movePairingFragment-go to wearos pairing fragment
+10-05 20:18:48.003 I/tUHM:FragmentUpdater( 6801): updateFragment-fragmentName:WearOSWatchPairingFragment bundle:Bundle[{from_stub=false}], option:replace : true add : false pop : false force : true
+10-05 20:18:48.003 I/tUHM:FragmentUpdater( 6801): isActivityDestroyed-will return ? false
+10-05 20:18:48.004 E/tUHM:FragmentUpdater( 6801): updateFragment-current fragment DeviceListFragment, result ? false
+10-05 20:18:48.004 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-current state : RESUMED
+10-05 20:18:48.004 I/tUHM:FragmentUpdater( 6801): commitReplaceFragmentTransaction-replace fragment ...
+10-05 20:18:48.005 D/FragmentManager( 6801): androidx.fragment.app.m1@6b65bae put WearOSWatchPairingFragment{b2b158c} (3cfa97ec-75d3-4efd-b815-8cdba876afb1 id=0x7f0800cf tag=tUHMFragment) to Active Fragments, mActive size: 2
+10-05 20:18:48.005 I/tUHM:DeviceListFragment( 6801): onPause-starts...
+10-05 20:18:48.006 I/tUHM:DiscoveryManager( 6801): stopDiscovery
+10-05 20:18:48.006 I/tUHM:DiscoveryManager( 6801): removeTimeout
+10-05 20:18:48.006 I/tUHM:BluetoothLEScanner( 6801): terminate
+10-05 20:18:48.006 I/tUHM:BluetoothLEScanner( 6801): stopDiscovery
+10-05 20:18:48.006 I/tUHM:DiscoveryManager( 6801): unregisterReceiver
+10-05 20:18:48.006 I/tUHM:DeviceListFragment( 6801): stopConnectUI-scanned device count : 2
+10-05 20:18:48.007 I/tUHM:AnimationHelper( 6801): ANIM::startTitleAnimation()::start
+10-05 20:18:48.007 I/tUHM:BottomButtonLayout( 6801): setButtonVisibility-starts...
+10-05 20:18:48.007 I/tUHM:BottomButtonLayout( 6801): updateButtonLayout-bothVisible : true screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:48.009 I/tUHM:WearOSWatchPairingFragment( 6801): onCreate-starts...
+10-05 20:18:48.009 I/tUHM:PairingFragment( 6801): onCreate-starts...
+10-05 20:18:48.009 I/tUHM:PairingFragment( 6801): initArguments-needToStartEasyPairing = false mIsFrom2ndPartyEntryPoint : false
+10-05 20:18:48.012 I/tUHM:ViewOrientationAdjuster( 6801): init-forcePortraitMode : false orientation : Portrait multiWindow : false width : 394 height : 853 screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:48.012 I/tUHM:PairingFragment( 6801): bindingLayout-portraitLayoutId ? true
+10-05 20:18:48.055 I/tUHM:PairingFragment( 6801): onViewCreated
+10-05 20:18:48.055 I/tUHM:ViewOrientationAdjuster( 6801): setupScrollPadding-normal case : 38.0
+10-05 20:18:48.055 I/tUHM:BottomButtonLayout( 6801): updateButtonLayout-bothVisible : true screenConfig : com.samsung.android.app.watchmanager.setupwizard.ViewOrientationAdjuster$ScreenConfig$PhonePortrait@c70c5e
+10-05 20:18:48.055 I/tUHM:OrientationBaseFragment( 6801): initScrollView-isPortrait : true leftFrameScrollView : com.samsung.android.app.watchmanager.ui.FadingEdgeNestedScrollView{8fa139e VFED..... ......I. 0,0-0,0 #7f0801a6 app:id/left_frame_scroll}
+10-05 20:18:48.056 I/tUHM:PairingFragment( 6801): checkUnifiedPermissionSupported-mSupportUnifiedP
