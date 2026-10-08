@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:sharedUserId="com.samsung.accessory.wmanager" android:sharedUserMaxSdkVersion="35" package="com.samsung.accessory.paranmgr" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_0d0d7e0fc285d6c2cf707ae0042e8ff140ee63c1c60287aca6a9b42069660a26aa56a5d246c18f4807a46080aa078159e40b00b9ad7ec0b7bd1172febb944c5a3ac27c71c5dc82364160cd65438fd155073d689c20539d5889aba381ada1be60739cfa84ff7c843bf56ee25d6490d6d19c2bc5e9c34a7b999d1c3a85a8557a25"/>
+    <uses-permission android:name="com.samsung.android.bixby.agent.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.voicewakeup.permission.EXECUTE_EXTERNAL_SERVICE"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <permission android:name="com.samsung.hearablemgr.permission.ACCESS_SOUND_CRAFT" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.samsung.hearablemgr.permission.ACCESS_GWADAPT_SOUND_STATUS" android:protectionLevel="signatureOrSystem"/>
+    <permission android:description="@string/iconx_signature_permission_decription" android:label="@string/iconx_signature_permission" android:name="com.samsung.accessory.paranmgr.permission.SIGNATURE" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.accessory.paranmgr.permission.FOTA" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.accessory.budsunitemgr.permission.SIGNATURE"/>
+    <uses-permission android:name="com.samsung.accessory.hearablemgr.permission.ACCESS_UNIFIED_HOST_MANAGER"/>
+    <uses-permission android:name="com.samsung.accessory.paranmgr.permission.FOTA"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.samsung.accessory.paranmgr.permission.SIGNATURE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCAL_NETWORK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.sec.android.app.clockpackage.permission.READ_ALARM"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="com.samsung.android.permission.SEM_AUTO_BIND_NOTIFICATION_LISTENER_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="com.sec.android.phone.permission.READ_CALL_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.phone.permission.WRITE_CALL_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="samsung.permission.wearablelogrequest"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.samsung.android.soagent.permission.ACCESSORY"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.samsung.android.app.routines.permission.ROUTINE_HOST"/>
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE"/>
+    <uses-permission android:name="com.sec.android.diagmonagent.permission.DIAGMON"/>
+    <uses-permission android:name="android.permission.DUMP"/>
+    <uses-permission android:name="com.sec.android.permission.DSMLAWMO"/>
+    <uses-permission android:name="com.samsung.android.mobileservice.permission.RECEIVE_SEMS_BROADCAST"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.settings.intelligence.READ_SETTINGS_SEARCH_DATA_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.samsungaccount.permission.ACCOUNT_MANAGER"/>
+    <uses-permission android:name="com.samsung.android.samsungaccount.permission.PROFILE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.permission.ACCESS_SOUND_ALIVE_PROVIDER"/>
+    <uses-permission android:name="com.samsung.permission.ACCESS_ADAPT_SOUND_PROVIDER"/>
+    <uses-feature android:name="android.software.companion_device_setup" android:required="false"/>
+    <uses-permission android:name="com.samsung.android.oneconnect.permission.START_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="samsung.permission.actwearablelogrequest"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="com.samsung.android.app.aodservice.permission.SERVICEBOX_REMOTEVIEWS"/>
+    <uses-permission android:name="com.samsung.android.app.aodservice.permission.SUB_SCREEN_PROVIDER"/>
+    <uses-permission android:name="com.samsung.android.wearable.permission.DEVICE_DASHBOARD_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.app.interpreter.permission.LAUNCH_FROM_BUDS"/>
+    <uses-permission android:name="android.permission.CONTROL_KEYGUARD"/>
+    <uses-permission android:name="com.samsung.accessory.hearablemgr.permission.WRITE_APP_REGISTRY"/>
+    <uses-permission android:name="com.samsung.android.hostmanager.permission.WRITE_APP_REGISTRY"/>
+    <uses-permission android:name="com.samsung.systemui.permission.KEYGUARD_IMAGE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.REMOVE_TASKS"/>
+    <queries>
+        <package android:name="com.samsung.android.app.watchmanager"/>
+        <package android:name="com.samsung.android.mobileservice"/>
+        <package android:name="com.osp.app.signin"/>
+        <package android:name="com.samsung.android.voc"/>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.sec.android.app.sbrowser"/>
+        <package android:name="com.android.chrome"/>
+        <package android:name="org.mozilla.firefox"/>
+        <package android:name="com.UCMobile"/>
+        <package android:name="sogou.mobile.explorer"/>
+        <package android:name="com.qihoo.browser"/>
+        <package android:name="com.android.browser"/>
+        <package android:name="com.vivo.browser"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.samsung.android.scloud.config"/>
+    </queries>
+    <queries>
+        <package android:name="com.samsung.android.app.find"/>
+    </queries>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.samsung.accessory.paranmgr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.accessory.paranmgr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.netflix.partner"/>
+    <permission android:name="com.samsung.accessory.paranmgr.permission.ACCESSORYDM" android:protectionLevel="signature"/>
+    <permission android:name="@string/permission_name" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="com.samsung.accessory.paranmgr.provider.Settings.READ"/>
+    <uses-permission android:name="com.samsung.accessory.paranmgr.provider.Settings.WRITE"/>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_3629419c2ae0170d349b2e5fbd55497a8a87c8b1723cbf1b5f6f0be11b7d2cf79f10f870cada167283cfdaed5523b1f0e397472a695f0176e92d6d8d9455af1a1cd4aa42b6dddf9341d9ca7cfe4c5c32ad82c030524ecc3c6610916e13f61964c2be969f8da953fb710cb4cb3ec00241048b1e97b68ebaebec4654b894caae20"/>
+    <uses-permission android:name="@string/permission_name"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.sec.android.settings.permission.SOFT_RESET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    <uses-permission android:name="android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS"/>
+    <uses-permission android:name="com.samsung.android.app.routines.permission.READ_ROUTINE_INFO"/>
+    <uses-permission android:name="com.samsung.android.app.routines.permission.WRITE_ROUTINE_INFO"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="false" android:enableOnBackInvokedCallback="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_gw_launcher" android:label="@string/app_name" android:name="com.samsung.accessory.hearablemgr.Application" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <meta-data android:name="theming-meta" android:value="meta_026_paranmgr"/>
+        <meta-data android:name="theming-meta-xml" android:resource="@xml/meta_026_paranmgr"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_advanced_features" android:name="com.samsung.accessory.hearablemgr.module.advancedfeature.AdvancedFeatureActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:label="@string/IDS_CST_OPT_ADAPT_SOUND" android:launchMode="singleTop" android:name="com.samsung.accessory.hearablemgr.module.hearingadjust.activity.AdaptSoundMainActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AdaptSoundMainActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:label="@string/IDS_CST_OPT_ADAPT_SOUND" android:name="com.samsung.accessory.hearablemgr.module.hearingadjust.activity.HearingResultActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/IDS_CST_OPT_ADAPT_SOUND" android:name="com.samsung.accessory.hearablemgr.module.hearingadjust.activity.HearingPreviewActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AdaptSoundTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:label="@string/DREAM_ST_HEADER_HEARING_TEST" android:name="com.samsung.accessory.hearablemgr.module.hearingadjust.activity.HearingTestingActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AdaptSoundTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/DREAM_ST_HEADER_HEARING_TEST" android:name="com.samsung.accessory.hearablemgr.module.hearingadjust.activity.HearingInstructionActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AdaptSoundTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineNoiseControlConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineBixbyVoiceWakeUpConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineVoiceDetectConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineSpatialAudioConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineBoostVoiceConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineLoudnessNormalizationConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineVoiceCommandsConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_in_ear_detection" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.InEarDetection4Buds3Activity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_voice_wakeup_title" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.VoiceControlsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_voice_wakeup_title" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.hotcommand.VoiceControlsWithoutWakeupActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/voice_detection" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.VoiceDetectActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_touchpad_option_menu" android:name="com.samsung.accessory.hearablemgr.module.touchcontrols.TouchAndHoldActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_touchpad_option_menu" android:name="com.samsung.accessory.hearablemgr.module.touchcontrols.TouchAndHoldOneUI8XActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/apps" android:name="com.samsung.accessory.hearablemgr.module.touchcontrols.SupportAppsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/pinch_and_hold_both_earbuds_turn_lighting" android:launchMode="singleTop" android:name="com.samsung.accessory.hearablemgr.module.touchcontrols.EarbudsLightActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/accessibility" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.HearingEnhancementsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_touchpad" android:name="com.samsung.accessory.hearablemgr.module.touchcontrols.TouchControlsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_touchpad" android:name="com.samsung.accessory.hearablemgr.module.touchcontrols.MediaControlActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/noise_controls_with_one_earbud_title" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.NoiseControlsWithOneEarBudActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/neck_stretch_title" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.NeckStretchReminderActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/neck_stretch_title" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.NeckStretchGuideActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/earbud_calibration" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.NeckCalibrationActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/customize_ambient_sound" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.CustomizeSoundActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/adapt_ambient_sound" android:name="com.samsung.accessory.hearablemgr.module.hearingtest.HearingTestActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/detect_conversations_title" android:name="com.samsung.accessory.hearablemgr.module.earadaptation.EarAdaptationActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/detect_conversations_title" android:name="com.samsung.accessory.hearablemgr.module.earadaptation.EarAdaptationGuideActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/equalizer" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.EqualizerActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/software_update" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.EarbudsSoftwareUpdateActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/settings_sound_effect" android:name="com.samsung.accessory.hearablemgr.module.soundeffect.SoundEffectActivity" android:permission="com.samsung.hearablemgr.permission.ACCESS_SOUND_CRAFT" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_sound_settings" android:name="com.samsung.accessory.hearablemgr.module.soundeffect.SoundCraftAppListActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_sound_settings" android:name="com.samsung.accessory.hearablemgr.module.soundeffect.SoundCraftDetailActivity" android:permission="com.samsung.hearablemgr.permission.ACCESS_SOUND_CRAFT" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.soundeffect.SoundCraftEqualizerDetailActivity" android:resizeableActivity="true" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.soundeffect.SoundCraftSpatialDetailActivity" android:resizeableActivity="true" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/advanced_sound_quality" android:name="com.samsung.accessory.hearablemgr.module.soundeffect.AdvancedSoundQualityActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver android:exported="false" android:label="@string/device_name" android:name="com.samsung.accessory.hearablemgr.core.appwidget.coverwidget.CoverWidgetControllerProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_BATTERY"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_NOISE_CONTROL"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/cover_widget_providers_b4"/>
+            <meta-data android:name="com.samsung.android.appwidget.PRIVACY_WIDGET" android:value="false"/>
+        </receiver>
+        <receiver android:enabled="@bool/enable_cover_widget_extra_large" android:exported="false" android:label="@string/device_name" android:name="com.samsung.accessory.hearablemgr.core.appwidget.coverwidget.CoverWidgetControllerProviderB5">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_BATTERY"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_NOISE_CONTROL"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/cover_widget_provider_b5"/>
+            <meta-data android:name="com.samsung.android.appwidget.provider" android:resource="@xml/samsung_appwidget_info_b5"/>
+            <meta-data android:name="com.samsung.android.appwidget.PRIVACY_WIDGET" android:value="false"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/device_name" android:name="com.samsung.accessory.hearablemgr.core.appwidget.coverwidget.CoverWidgetControllerProviderB52X2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_BATTERY"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_NOISE_CONTROL"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/cover_widget_provider_b5_2x2"/>
+            <meta-data android:name="com.samsung.android.appwidget.provider" android:resource="@xml/samsung_appwidget_info_b5_children"/>
+            <meta-data android:name="com.samsung.android.appwidget.PRIVACY_WIDGET" android:value="false"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/device_name" android:name="com.samsung.accessory.hearablemgr.core.appwidget.coverwidget.CoverWidgetControllerProviderB54X2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_BATTERY"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_NOISE_CONTROL"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/cover_widget_provider_b5_4x2"/>
+            <meta-data android:name="com.samsung.android.appwidget.provider" android:resource="@xml/samsung_appwidget_info_b5_children"/>
+            <meta-data android:name="com.samsung.android.appwidget.PRIVACY_WIDGET" android:value="false"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/device_name" android:name="com.samsung.accessory.hearablemgr.module.hearingadjust.compatibility.AdaptSoundOnConnectSyncProvider">
+            <intent-filter>
+                <action android:name="com.samsung.accessory.hearablemgr.core.service.CoreService.ACTION_DEVICE_EXTENDED_STATUS_READY"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.samsung.accessory.paranmgr.core.notification.NotificationListener" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.budscontroller.BudsControllerMessengerService" android:permission="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER">
+            <meta-data android:name="background_switching" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.samsung.accessory.hearablemgr.ACTION_MESSENGER"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.budscontroller.BudsControllerQuickPanelService" android:permission="com.samsung.hearablemgr.permission.ACCESS_SOUND_CRAFT">
+            <meta-data android:name="background_switching" android:value="true"/>
+            <intent-filter>
+                <action android:name="com.samsung.accessory.hearablemgr.BUDS_CONTROLLER"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.samsung.android.bixby.support.wakeup.phrases" android:value="hibixby;bixby"/>
+        <provider android:authorities="com.samsung.accessory.paranmgr" android:exported="true" android:name="com.samsung.accessory.hearablemgr.module.hearingadjust.compatibility.AdaptSoundProvider" android:permission="com.samsung.hearablemgr.permission.ACCESS_GWADAPT_SOUND_STATUS"/>
+        <meta-data android:name="SupportOneUI8" android:value="true"/>
+        <meta-data android:name="PluginHomeShowedSupport" android:value="true"/>
+        <meta-data android:name="support_wearing_state_share" android:value="true"/>
+        <meta-data android:name="com.samsung.android.notification.listener.autobind" android:value="user"/>
+        <meta-data android:name="com.samsung.android.gearplugin.supportFMM" android:value="true"/>
+        <meta-data android:name="com.samsung.android.notification.blockable" android:value="true"/>
+        <meta-data android:name="com.samsung.android.supports_pop_over" android:value="false"/>
+        <meta-data android:name="com.samsung.android.mobileservice.IntentRequest" android:value="true"/>
+        <meta-data android:name="com.samsung.android.mobileservice.AppId" android:value="@string/samsung_account_app_id"/>
+        <meta-data android:name="sec_galaxy_wearable_plugin" android:value="true"/>
+        <meta-data android:name="sec_galaxy_wearable_plugin_type" android:value="buds"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.samsung.accessory.hearablemgr.module.LaunchActivity" android:resizeableActivity="true" android:screenOrientation="user" android:theme="@style/AppTheme.NoActionBar.Translucent">
+            <intent-filter>
+                <action android:name="com.samsung.uhm.action.STEALTH_MODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="com.samsung.android.intent.category.HIDDEN_LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.oobe.OOBEActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.samsung.accessory.hearablemgr.module.home.activity.HomeActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar.Home"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.samsung.accessory.hearablemgr.module.home.activity.HomeOneUI8xActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:theme="@style/AppTheme.NoActionBar.Home"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/you_re_all_set" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.YouAreAllSetActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/read_notifications_aloud" android:name="com.samsung.accessory.hearablemgr.module.notification.NewNotificationActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.SamsungAccountActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.TermsAndConditionsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.AskParentActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.termsandconditions.UsePersonalInformationForActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.MoreUsefulFeaturesActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_notification_to_read_aloud" android:name="com.samsung.accessory.hearablemgr.module.notification.NotificationDetailActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_game_mode_title" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.GamingModeActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_find_my_gear" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.FindMyEarbudsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="@bool/v23_and_above" android:label="@string/card_menu_tips_and_user_manual" android:name="com.samsung.accessory.hearablemgr.module.tipsmanual.TipsAndUserManualActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:hardwareAccelerated="@bool/v23_and_above" android:label="@string/tips_title" android:name="com.samsung.accessory.hearablemgr.module.tipsmanual.TipsListActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/labs_title" android:name="com.samsung.accessory.hearablemgr.module.aboutmenu.LabsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/labs_title" android:name="com.samsung.accessory.hearablemgr.module.aboutmenu.EnhancementAmbientVolumeActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/quick_launch_advanced_title" android:name="com.samsung.accessory.hearablemgr.module.touchcontrols.QuickLaunchAdvancedActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/auto_switch_to_ambient_sound" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.AutoAmbientSoundActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/card_menu_about_earbuds" android:name="com.samsung.accessory.hearablemgr.module.aboutmenu.AboutEarbudsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/about_earbuds_legal_information" android:name="com.samsung.accessory.hearablemgr.module.aboutmenu.LegalInformationActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/about_earbuds_battery_information" android:name="com.samsung.accessory.hearablemgr.module.aboutmenu.BatteryInformationActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/end_user_license_agreement" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.NoticeEULAActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/privacy_policy" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.NoticePrivacyPolicyActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/permissions" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.PermissionsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/report_diagnostic_info" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.NoticeDiagnosticInfoActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineEqualizerConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineLockTouchpadConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineNotificationConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineGamingModeConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineTouchpadOptionConfigActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/RoutineConfigurationDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.VerificationMenuActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.VerificationDeviceInfoActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.VerificationDumpLogActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.VerificationHealthActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.AboutGalaxyWearableActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.AboutGalaxyWearablePermissionsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_seamless_connection" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.SeamlessConnectionActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/earbuds_settings" android:name="com.samsung.accessory.hearablemgr.module.settings.SettingsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="Verify" android:name="com.samsung.accessory.hearablemgr.module.setupwizard.AdultVerifyWebViewActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar.SetupWizard"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/safety_information" android:name="com.samsung.accessory.hearablemgr.module.aboutmenu.SafetyInformationActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_in_ear_detection" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.InEarDetectionActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.BudsManagerPermissionActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/galaxy_wearable" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxywearable.GalaxyWearableSettingPermissionActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.samsung.accessory.hearablemgr.core.searchable.view.SearchResultActivity" android:permission="com.samsung.android.permission.SEM_GLOBAL_SEARCH" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.samsung.android.intent.action.GLOBALSEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="office"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_connections" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.ConnectionsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/search_settings" android:name="com.samsung.accessory.hearablemgr.core.searchable.view.SearchSettingActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.searchable.view.tags.SearchAllSuggestionActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/advanced_spatial_audio" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.SpatialAudioActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/earbud_calibration" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.GyroCalibrationActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_call_quality_title" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.AmbientDuringCallsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/voice_controls" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.BixbyVoiceWakeUpActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_fit_test" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.FitTestActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/settings_fit_test" android:name="com.samsung.accessory.hearablemgr.module.mainmenu.HowToWearWebViewActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/galaxy_wearable_settings" android:name="com.samsung.accessory.hearablemgr.module.home.GalaxyWearableSettingActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/galaxy_buds" android:name="com.samsung.accessory.hearablemgr.module.home.AppSettingsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/permissions" android:name="com.samsung.accessory.hearablemgr.module.home.PermissionActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/auto_update_galaxy_buds" android:name="com.samsung.accessory.hearablemgr.module.softwareupdate.AutoUpdateBudsUniteActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/galaxy_buds" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxybuds.AboutGalaxyBudsUnitePermissionsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/galaxy_buds" android:name="com.samsung.accessory.hearablemgr.module.aboutgalaxybuds.AboutGalaxyBudsActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.samsung.accessory.hearablemgr.module.samsungaccount.view.webview.SaWebViewRelayActivity" android:resizeableActivity="true" android:theme="@style/AppTheme.NoActionBar.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paran.buds.samsungaccount.auth" android:scheme="sawebsdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:label="" android:name="com.samsung.accessory.hearablemgr.module.dashboard.DeviceDashboardBottomSheetActivity" android:resizeableActivity="true" android:screenOrientation="behind" android:theme="@style/BottomSheetDialogTheme"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:hardwareAccelerated="true" android:label="@string/widget_settings_title" android:name="com.samsung.accessory.hearablemgr.core.appwidget.base.WidgetSettingActivityUI85" android:resizeableActivity="false" android:taskAffinity="" android:theme="@style/WidgetSettingTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:excludeFromRecents="true" android:exported="true" android:label="@string/widget_settings_title" android:name="com.samsung.accessory.hearablemgr.core.appwidget.base.WidgetSettingActivityUI6UI7" android:resizeableActivity="false" android:taskAffinity="@string/widget_settings_task" android:theme="@style/WidgetSettingTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:excludeFromRecents="true" android:exported="true" android:label="@string/widget_settings_title" android:name="com.samsung.accessory.hearablemgr.core.appwidget.WidgetSettingControllerActivity" android:resizeableActivity="false" android:taskAffinity="@string/widget_settings_task" android:theme="@style/WidgetSettingTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+            <meta-data android:name="com.sec.android.app.skipWidgetConfigure" android:value="true"/>
+            <meta-data android:name="com.samsung.android.multiwindow.nonresizeable" android:value="true"/>
+        </activity>
+        <service android:exported="false" android:name="com.samsung.accessory.hearablemgr.core.service.MainService"/>
+        <receiver android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.bluetooth.BluetoothReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="shortService" android:name="oreocompat.InstantForegroundService"/>
+        <service android:name="com.samsung.accessory.hearablemgr.core.service.RemoveTaskMonitor" android:stopWithTask="false"/>
+        <receiver android:exported="false" android:label="@string/device_name" android:name="com.samsung.accessory.hearablemgr.core.appwidget.WidgetBudsControllerProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_BATTERY"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_NOISE_CONTROL"/>
+                <action android:name="com.samsung.accessory.appwidget.WIDGET_ACTION_UPDATE_BLOCK_TOUCHES"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_buds_controller_appwidget_provider"/>
+            <meta-data android:name="android.appwidget.provider.semConfigureActivity" android:value="com.samsung.accessory.hearablemgr.core.appwidget.WidgetSettingControllerActivity"/>
+        </receiver>
+        <provider android:authorities="com.samsung.accessory.paranmgr.core.bixbyroutine.provider" android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.bixbyroutine.RoutineActionProvider" android:permission="android.permission.WRITE_SECURE_SETTINGS">
+            <intent-filter>
+                <action android:name="com.samsung.android.SDK.routine.ROUTINE_ACTION_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.SDK.routine.meta.ACTION" android:resource="@xml/routine_actions"/>
+        </provider>
+        <provider android:authorities="com.samsung.accessory.paranmgr.core.secsettingsearch.SettingsIndexablesProvider" android:exported="true" android:grantUriPermissions="true" android:name="com.samsung.accessory.hearablemgr.core.secsettingsearch.SettingsIndexablesProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
+            </intent-filter>
+            <meta-data android:name="com.samsung.android.settings.require_settings_key" android:value="@string/top_level_accessory_settings"/>
+            <meta-data android:name="com.samsung.android.settings.require_settings_title" android:value="@string/app_name"/>
+            <meta-data android:name="com.samsung.android.settings.require_various_index" android:value="true"/>
+        </provider>
+        <provider android:authorities="com.samsung.android.SM-R630.searchprovider" android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.searchable.db.SearchContentProvider" android:protectionLevel="signature"/>
+        <provider android:authorities="com.samsung.android.paranmgr.quicksearch" android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.searchable.quicksearch.QuickSearchProvider" android:protectionLevel="signature">
+            <path-permission android:pathPrefix="/search_suggest_regex_query" android:readPermission="android.permission.GLOBAL_SEARCH"/>
+        </provider>
+        <provider android:authorities="com.samsung.accessory.paranmgr.findersearch" android:enabled="true" android:exported="true" android:grantUriPermissions="true" android:name="com.samsung.accessory.hearablemgr.core.searchable.quicksearch.SFinderSearchContentProvider" android:permission="com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER" android:protectionLevel="signature"/>
+        <receiver android:enabled="false" android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.aom.AomReceiver" android:permission="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER">
+            <intent-filter>
+                <action android:name="com.samsung.accessory.earbuds.action.AOM_SETTING_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="plugin_name" android:value="@string/device_name"/>
+        </receiver>
+        <receiver android:enabled="false" android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.aom.AomReceiverUI8x" android:permission="com.samsung.accessory.hearablemgr.permission.ACCESS_UNIFIED_HOST_MANAGER">
+            <intent-filter>
+                <action android:name="com.samsung.accessory.earbuds.action.AOM_SETTING_LAUNCH"/>
+            </intent-filter>
+            <meta-data android:name="plugin_name" android:value="@string/device_name"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.fmm.receiver.FmmRequestReceiver" android:permission="com.sec.android.permission.DSMLAWMO">
+            <intent-filter>
+                <action android:name="com.samsung.android.fmm.OPERATION_REQUEST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.plugininterface.PluginInterfaceReceiver" android:permission="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER">
+            <intent-filter>
+                <action android:name="com.samsung.android.watchmanager.ACTION_PLUGIN_REQUEST"/>
+                <action android:name="com.samsung.android.watchmanager.ACTION_PLUGIN_RESPONSE"/>
+                <action android:name="com.samsung.android.ringplugin.CRADLE_BATTERY_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.selfdiagnostics.SelfDiagnosticsService" android:permission="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER">
+            <intent-filter>
+                <action android:name="android.intent.action.SELF_DIAGNOSTICS_SERVICE_ACTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.samsung.accessory.hearablemgr.core.selfdiagnostics.SelfDiagnosticsServiceUI8x" android:permission="com.samsung.accessory.hearablemgr.permission.ACCESS_UNIFIED_HOST_MANAGER">
+            <intent-filter>
+                <action android:name="android.intent.action.SELF_DIAGNOSTICS_SERVICE_ACTION"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.samsung.accessory.hearablemgr.module.dashboard.ExternalRequestReceiver" android:permission="com.samsung.android.hostmanager.permission.ACCESS_UNIFIED_HOST_MANAGER">
+            <intent-filter>
+                <action android:name="com.samsung.android.wearable.dashboard.action.CONNECT_REQUEST"/>
+                <action android:name="com.samsung.android.wearable.dashboard.action.DISCONNECT_REQUEST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.accessory.hearablemgr.module.dashboard.ExternalFotaRequestReceiver" android:permission="com.samsung.accessory.paranmgr.permission.FOTA">
+            <intent-filter>
+                <action android:name="wearable.SOFTWARE_UPDATE_com.samsung.accessory.paranmgr"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.samsung.accessory.hearablemgr.module.samsungaccount.receiver.SaBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.accessory.hearablemgr.core.service.ACTION_SETUP_WIZARD_DONE"/>
+                <action android:name="com.samsung.accessory.hearablemgr.core.service.CoreService.ACTION_ON_HEADSET_CONNECTED"/>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNIN_COMPLETED"/>
+                <action android:name="com.samsung.account.SAMSUNGACCOUNT_SIGNOUT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionTrampolineActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:enabled="true" android:exported="false" android:launchMode="singleInstance" android:name="androidx.glance.appwidget.action.InvisibleActionTrampolineActivity" android:noHistory="true" android:taskAffinity="androidx.glance.appwidget.ListAdapterCallbackTrampoline" android:theme="@style/Widget.Glance.AppWidget.CallbackTrampoline"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.action.ActionCallbackBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.UnmanagedSessionReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.intent.action.TEMPLATE_WIDGET_FORCE_UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="androidx.glance.appwidget.MyPackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="androidx.glance.appwidget.GlanceRemoteViewsService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <provider android:authorities="com.samsung.accessory.paranmgr.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:exported="false" android:name="androidx.work.multiprocess.RemoteWorkManagerService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:name="androidx.core.widget.RemoteViewsCompatService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.samsung.accessory.paranmgr.CapsuleProvider" android:exported="true" android:name="com.samsung.android.sdk.bixby2.provider.CapsuleProvider"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.companionApp" android:value="true"/>
+        <meta-data android:name="com.samsung.android.sdk.bixby2.version" android:value="@string/sdk_version"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|layoutDirection" android:excludeFromRecents="true" android:exported="false" android:name="com.osp.app.signin.sasdk.disclaimer.ThirdPartyDisclaimerActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <provider android:authorities="com.samsung.accessory.paranmgr.LogDumpProvider" android:directBootAware="true" android:exported="false" android:name="com.samsung.android.fotaprovider.LogDumpProvider"/>
+        <provider android:authorities="com.samsung.accessory.paranmgr.InternalEventProvider" android:exported="false" android:name="com.samsung.android.fotaagent.internalevent.InternalEventProvider"/>
+        <service android:exported="false" android:name="com.samsung.android.fotaagent.push.FcmPushListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.samsung.android.fotaprovider.externalevent.ExternalEventReceiver" android:permission="@string/permission_name">
+            <intent-filter>
+                <action android:name="wearable.SOFTWARE_UPDATE_com.samsung.accessory.paranmgr"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.fotaagent.PollingReceiver">
+            <intent-filter>
+                <action android:name="sec.fotaprovider.action.POLLING_TIME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.samsung.android.fotaagent.FotaSPPReceiver">
+            <intent-filter>
+                <action android:name="40a985eacedf50ec"/>
+                <action android:name="com.sec.spp.NotificationAckResultAction"/>
+                <action android:name="com.sec.spp.RegistrationChangedAction"/>
+                <action android:name="com.sec.spp.ServiceDataDeletedAction"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <category android:name="com.sec.android.fotaprovider"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.samsung.android.fotaagent.dlexpiration.DlExpirationReceiver">
+            <intent-filter>
+                <action android:name="com.samsung.android.fotaprovider.action.DL_EXPIRATION_TIME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.samsung.android.fotaagent.FotaUpdateJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.samsung.android.fotaagent.FotaRegisterJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.accessorydm.receiver.XDMBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.accessorydm.receiver.XDMAlarmReceiver" android:permission="com.samsung.accessory.paranmgr.permission.ACCESSORYDM">
+            <intent-filter>
+                <action android:name="com.sec.android.fotaprovider.POSTPONED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.dialog.XUIDialogActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.DialogActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.checkingforupdate.XUICheckingForUpdateActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.autoupdate.XUIAutoUpdateActivity" android:resizeableActivity="false" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity.AutoUpdate"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.installconfirm.XUIInstallConfirmActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.progress.XUIProgressActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.downloadconfirm.XUIDownloadConfirmActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/STR_ACCESSORY_UPDATE_TITLE_EARBUDS" android:name="com.accessorydm.ui.downloadandinstallconfirm.DownloadAndInstallConfirmActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.noupdatable.XUINoUpdatableVersionActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.lastupdate.XUILastUpdateActivity" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.accessorydm.ui.noupdatable.XUINoUpdatableLatestVersionActivity" android:resizeableActivity="false" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.accessorydm.ui.XUINotificationConnectActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.accessorydm.ui.UserInitEntryActivity" android:noHistory="true" android:screenOrientation="behind" android:theme="@style/FotaProviderTheme.Transparent"/>
+        <service android:name="com.accessorydm.service.XDMJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.accessorydm.service.XDMService"/>
+        <service android:name="com.accessorydm.ui.notification.manager.StubNotificationTypeManagerService"/>
+        <service android:exported="false" android:foregroundServiceType="connectedDevice" android:name="com.accessorydm.ui.notification.manager.NotificationId$Common"/>
+        <service android:exported="false" android:foregroundServiceType="connectedDevice" android:name="com.accessorydm.ui.notification.manager.NotificationId$UpdateReport"/>
+        <meta-data android:name="SPDE.build.signature" android:value="5a598907435f04d23366bc078e8d4c3417c5fd61/185585322/paran-samsung-release/HearableMgrParan-108610-1.0.01"/>
+        <meta-data android:name="SPDE.env.version" android:value="8.12.0/G36.2.9/1.2.16"/>
+    </application>
+</manifest>
